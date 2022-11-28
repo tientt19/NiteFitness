@@ -15,6 +15,34 @@ class BaseService {
         // not use
     }
     
+    private var headersDefault: HTTPHeaders? {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let modelCode = withUnsafePointer(to: &systemInfo.machine) {
+            $0.withMemoryRebound(to: CChar.self, capacity: 1) { ptr in
+                String.init(validatingUTF8: ptr)
+            }
+        }
+        let userAgent = "\(KeyChainManager.shared.userAgent ?? "")-model: \(modelCode ?? "")"
+        
+        var header = HTTPHeaders()
+        header.add(name: "user-agent", value: userAgent)
+        header.add(name: "Accept", value: "application/json")
+        
+        if let accessToken = KeyChainManager.shared.accessToken {
+            header.add(name: "Authorization", value: "Bearer \(accessToken)")
+        }
+        
+        if APP_ENV == .DEV {
+            print("Authorization:", header.dictionary)
+        }
+        else {
+            print("Authorization:", header.dictionary)
+        }
+        
+        return header
+    }
+    
     private var headers: HTTPHeaders? {
         guard let tokenString = KeyChainManager.shared.accessToken else {
             return nil
@@ -49,6 +77,25 @@ class BaseService {
         let dateFormat = DateFormatter()
         decoder.dateDecodingStrategy = .formatted(dateFormat)
         return decoder
+    }
+    
+    // MARK: - GET_WP
+    func GET_WP<T: Codable>(url: String,
+                            param: [String: Any]?,
+                            completion: @escaping ((Result<T, APIError>) -> Void)) {
+        let request = AF.request(url.toUrl,
+                                 method: .get,
+                                 parameters: param,
+                                 headers: self.headersDefault)
+        request.validate().responseDecodable(of: T.self, decoder: self.jsonDecoder) { [weak self] (response: DataResponse<T, AFError>) in
+            
+            Log.shared.logApiRequest(url: url, method: "GET", parameters: param, result: response.data)
+            
+            guard let `self` = self else {
+                return
+            }
+            completion(self.handleResponse(response))
+        }
     }
     
     // MARK: - GET

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTabbarController: UITabBarController {
+class MainTabbarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,17 @@ class MainTabbarController: UITabBarController {
         return navigation?.supportedInterfaceOrientations ?? .portrait
     }
     
+    private func setShadowTabBar() {
+        self.tabBar.layer.shadowColor = UIColor.lightGray.cgColor
+        self.tabBar.layer.shadowOpacity = 0.5
+        self.tabBar.layer.shadowOffset = CGSize.zero
+        self.tabBar.layer.shadowRadius = 5
+        self.tabBar.layer.borderColor = UIColor.clear.cgColor
+        self.tabBar.layer.borderWidth = 0
+        self.tabBar.clipsToBounds = false
+        self.tabBar.backgroundColor = UIColor.white
+    }
+    
     private func setInitAddItemTabBarController() {
         self.tabBar.layer.borderColor = UIColor(hex: "D4D4D4").cgColor
         self.tabBar.layer.borderWidth = 0.5
@@ -31,46 +42,50 @@ class MainTabbarController: UITabBarController {
         UITabBar.appearance().backgroundImage = UIImage()
         UITabBar.appearance().barTintColor = UIColor.white
         UITabBar.appearance().backgroundColor = .white
-        UITabBar.appearance().tintColor = UIColor(hex: "0026AB")
-        UITabBar.appearance().unselectedItemTintColor = UIColor(hex: "25150E", alpha: 0.5)
+        UITabBar.appearance().tintColor = R.color.mainColor()
+        UITabBar.appearance().unselectedItemTintColor = UIColor.init(hex: "8A8A8A")
         UITabBar.appearance().isTranslucent = true
         UITabBar.appearance().barStyle = .default
+        
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .selected)
         
         let verticalSize: CGFloat = -1 // -3.0
         
-        //Tin tức
-        let feedController = NewFeedRouter.setupModule()
+        // MARK: Page 1
+        let tab_1 = HomeHealthyRouter.setupModule()
+        tab_1.tabBarItem = TabbarItem.HEALTHY.item
         
-        feedController.tabBarItem.tag = 0
-        feedController.tabBarItem.title  = "Tin Tức"
-        feedController.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: verticalSize)
-        feedController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        feedController.tabBarItem.image = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        feedController.tabBarItem.selectedImage = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        let feedNavController = BaseNavigationController(rootViewController: feedController)
-        feedNavController.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)
-        feedNavController.setHiddenNavigationBarViewControllers([])
-        
-        //Tin tức
-        let xxxController = LoginRouter.setupModule()
-        
-        xxxController.tabBarItem.tag = 0
-        xxxController.tabBarItem.title  = "Tin Tức tesst"
-        xxxController.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: verticalSize)
-        xxxController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        xxxController.tabBarItem.image = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        xxxController.tabBarItem.selectedImage = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        let xxxNavController = BaseNavigationController(rootViewController: xxxController)
-        xxxNavController.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)
-        xxxNavController.setHiddenNavigationBarViewControllers([])
+        let navigationTab_1 = BaseNavigationController(rootViewController: tab_1)
+        navigationTab_1.setHiddenNavigationBarViewControllers([
+//            HomeFitViewController.self,
+//            PracticeViewController.self,
+//            MyWorkoutViewController.self,
+//            EditListExerciseViewController.self,
+//            DoExerciseViewController.self,
+//            FinishWorkoutViewController.self,
+//            SearchFitViewController.self,
+//            DetailPurposePracticeViewController.self,
+//            BikeWorkoutViewController.self,
+//            WorkoutDetailViewController.self,
+//            BicycleResultViewController.self,
+//            HomeFitContainerViewController.self,
+//            VideoFitDetailPlayerViewController.self,
+//            DetailRacingViewController.self,
+//            BlogDetailViewController.self,
+//            PlayVideoViewController.self,
+//            PlayVideoFullViewController.self,
+//            PlayVideoFullFitViewController.self,
+//            DetailAppointmentViewController.self,
+//            DoctorDetailViewController.self,
+            HomeHealthyViewController.self])
         
         // MARK:  Add Tabbar
         self.viewControllers = [
-            feedNavController,
-            xxxNavController
+            tab_1
         ]
+        self.delegate = self
+        gTabBarController = self
     }
 }
 

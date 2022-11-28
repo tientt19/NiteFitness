@@ -1,13 +1,34 @@
 //
-//  Date.swift
-//  myElcom
+//  Date+Extension.swift
+//  1SK
 //
-//  Created by Tiến Trần on 29/07/2022.
+//  Created by tuyenvx on 9/30/20.
 //
-
-import Foundation
 
 import UIKit
+
+extension Date {
+    func isEqual(to date: Date, toGranularity component: Calendar.Component, in calendar: Calendar = .current) -> Bool {
+        calendar.isDate(self, equalTo: date, toGranularity: component)
+    }
+    
+    func isInSameYear(as date: Date) -> Bool { isEqual(to: date, toGranularity: .year) }
+    func isInSameMonth(as date: Date) -> Bool { isEqual(to: date, toGranularity: .month) }
+    func isInSameWeek(as date: Date) -> Bool { isEqual(to: date, toGranularity: .weekOfYear) }
+    
+    func isInSameDay(as date: Date) -> Bool { Calendar.current.isDate(self, inSameDayAs: date) }
+    
+    var isInThisYear: Bool { isInSameYear(as: Date()) }
+    var isInThisMonth: Bool { isInSameMonth(as: Date()) }
+    var isInThisWeek: Bool { isInSameWeek(as: Date()) }
+    
+    var isInYesterday: Bool { Calendar.current.isDateInYesterday(self) }
+    var isInToday: Bool { Calendar.current.isDateInToday(self) }
+    var isInTomorrow: Bool { Calendar.current.isDateInTomorrow(self) }
+    
+    var isInTheFuture: Bool { self > Date() }
+    var isInThePast: Bool { self < Date() }
+}
 
 // MARK: Date Format
 extension Date {
@@ -46,7 +67,7 @@ extension Date {
     var startOfWeek: Date {
         let component = calendar.dateComponents([.weekOfYear, .yearForWeekOfYear], from: self)
         let sunday = calendar.date(from: component)!
-        return calendar.date(byAdding: .day, value: 0, to: sunday)!
+        return calendar.date(byAdding: .day, value: 1, to: sunday)!
     }
 
     var endOfWeek: Date {
@@ -154,15 +175,29 @@ extension Date {
         let component = calendar.dateComponents([.year], from: self, to: date)
         return component.year ?? 0
     }
-
+    
     func toString(_ format: Format = .ymd) -> String {
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = format.rawValue
         dateFormater.locale = Locale(identifier: "vi")
-//        return dateFormater.string(from: self)
-        
+        return dateFormater.string(from: self)
+    }
+
+    func toStringReplace(_ format: Format = .ymd) -> String {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = format.rawValue
+        dateFormater.locale = Locale(identifier: "vi")
+        //return dateFormater.string(from: self)
+
         let text = dateFormater.string(from: self)
         return text.replaceCharacter(target: "Th", withString: "Thứ")
+    }
+    
+    func toInt(_ format: Format = .ymd) -> Int? {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = format.rawValue
+        dateFormater.locale = Locale(identifier: "vi")
+        return Int(dateFormater.string(from: self))
     }
     
     func toTimestamp() -> Int {
@@ -232,33 +267,51 @@ extension Date {
         case ...31_536_000:
             timeStringValue = "\(self.monthBetween(with: Date())) tháng trước"
         case 31_536_000...:
-            timeStringValue = toString(.dmySlash)
+            timeStringValue = self.toStringReplace(.dmySlash)
         default:
             timeStringValue = ""
         }
         return "\(timeStringValue)"
     }
 
+    func age() -> Int {
+        var ageComponents: DateComponents!
+        if #available(iOS 15, *) {
+            ageComponents = calendar.dateComponents([.year], from: self, to: .now)
+        } else {
+            ageComponents = calendar.dateComponents([.year], from: self, to: Date())
+        }
+        return ageComponents.year!
+    }
+    
     enum Format: String {
         case ymd = "yyyy-MM-dd"
         case dmy = "dd-MM-yyyy"
         case hmsdMy = "HH:mm:SS dd-MM-yyyy"
         case hm = "HH:mm"
         case hms = "HH:mm:SS"
-        case hma = "HH:mm a"
         case h = "HH"
         case m = "mm"
         case dmyhms = "dd-MM-yyyy HH:mm:SS"
+        case dmyhmsSlash = "dd/MM/yyyy HH:mm:ss"
         case hmdmy = "HH:mm dd/MM/yyyy"
         case ms = "m:SS"
         case dmySlash = "dd/MM/yyyy"
         case ymdSlash = "yyyy/MM/dd"
-        case ymdhms = "yyyy-MM-dd HH:mm:SS"
+        case mySlash = "MM/yyyy"
+        case ymdSlashhms = "yyyy/MM/dd HH:mm:SS"
+        case ymdhms = "yyyy-MM-dd HH:mm:ss"
         case ymdThmsZ = "yyyy-MM-dd'T'HH:mm:ssZ"
+        case ymdThms = "yyyy-MM-dd'T'HH:mm:ss"
         case eeedmySlash = "EEE, dd/MM/yyyy"
         case eeeedmySlash = "EEEE, dd/MM/yyyy"
         case eee = "EEE"
         case eeee = "EEEE"
+        case ymdhm = "yyyy-MM-dd HH:mm"
+        
+        case dd = "dd"
+        case MM = "MM"
+        case YYYY = "YYYY"
     }
 
 }
@@ -277,12 +330,20 @@ extension Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: noon)!
     }
     
+    var dayCurrent: Date {
+        return Calendar.current.date(byAdding: .day, value: 1, to: begin)!
+    }
+    
+    var toDay: Date {
+        return Calendar.current.date(byAdding: .day, value: 0, to: begin)!
+    }
+    
     var dayAfter: Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: noon)!
     }
     
-    var toDay: Date {
-        return Calendar.current.date(byAdding: .day, value: 0, to: noon)!
+    var begin: Date {
+        return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: self)!
     }
     
     var noon: Date {
@@ -293,35 +354,54 @@ extension Date {
         return Calendar.current.date(byAdding: .day, value: -7, to: noon)!
     }
     
+    var weekAfter: Date {
+        return Calendar.current.date(byAdding: .day, value: 7, to: noon)!
+    }
+    
     var monthBefore: Date {
-        return Calendar.current.date(byAdding: .day, value: -30, to: noon)!
+        return Calendar.current.date(byAdding: .day, value: -15, to: noon)!
+    }
+    
+    var monthAfter: Date {
+        return Calendar.current.date(byAdding: .day, value: 45, to: noon)!
     }
     
     var yearBefore: Date {
-        return Calendar.current.date(byAdding: .day, value: -365, to: noon)!
+        return Calendar.current.date(byAdding: .day, value: -182, to: noon)!
+    }
+    
+    var yearAfter: Date {
+        return Calendar.current.date(byAdding: .day, value: 547, to: noon)!
     }
     
     var isLastDayOfMonth: Bool {
         return dayAfter.month != month
     }
     
-    var currentTime: String {
-        let formatter = DateFormatter()
-        formatter.timeZone = Calendar.current.timeZone
-        formatter.locale = Calendar.current.locale
-        formatter.dateFormat = "HH:mm"
-        
-        let dateString = formatter.string(from: Date())
-        return dateString
+    var startOfWeekCurrent: Date? {
+        let gregorian = Calendar(identifier: .gregorian)
+        guard let sunday = gregorian.date(from: gregorian.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)) else { return nil }
+        return gregorian.date(byAdding: .day, value: 1, to: sunday)
+    }
+
+    var endOfWeekCurrent: Date? {
+        let gregorian = Calendar(identifier: .gregorian)
+        guard let sunday = gregorian.date(from: gregorian.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)) else { return nil }
+        return gregorian.date(byAdding: .day, value: 7, to: sunday)
     }
     
-    func dateStringWith(_ strFormat: Format = .hma) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = Calendar.current.timeZone
-        dateFormatter.locale = Calendar.current.locale
-        dateFormatter.dateFormat = strFormat.rawValue
-        
-        return dateFormatter.string(from: self)
+    var startOfMonthCurrent: Date? {
+        return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: self)))
+    }
+
+    var endOfMonthCurrent: Date? {
+        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonthCurrent ?? Date())
+    }
+    
+    func isMonday() -> Bool {
+        let calendar = Calendar(identifier: .gregorian)
+        let components = calendar.dateComponents([.weekday], from: self)
+        return components.weekday == 2
     }
 }
 
@@ -336,11 +416,29 @@ extension TimeInterval {
         }
         return formater.string(from: self)
     }
+    
+    func toDate() -> Date {
+        return Date(timeIntervalSince1970: self)
+    }
+    
+    func asTimeFormat(_ isFullFormat: Bool = false) -> String {
+        let seconds = Int(self)
+        let hour = seconds / 3600
+        let minute = (seconds % 3600) / 60
+        let second = ((seconds % 3600) % 60)
+        if isFullFormat {
+            return String(format: "%02d:%02d:%02d", hour, minute, second)
+        }
+        if hour == 0 {
+            return String(format: "%02d:%02d", minute, second)
+        }
+        return String(format: "%d:%02d:%02d", hour, minute, second)
+    }
 }
 
 // MARK: ISO8601DateFormatter
 extension Date {
-    init(dateString: String) {
+    init(dateString:String) {
         self = Date.iso8601Formatter.date(from: dateString)!
     }
 
@@ -352,4 +450,51 @@ extension Date {
                                    .withColonSeparatorInTime]
         return formatter
     }()
+}
+
+
+extension Int {
+//    func toDate() -> String {
+//        let unixtimeInterval = self
+//        let date = Date(timeIntervalSince1970: TimeInterval(unixtimeInterval))
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC +7:00")
+//        dateFormatter.locale = NSLocale.current
+//        
+//        dateFormatter.dateFormat = "dd"
+//        let day = dateFormatter.string(from: date)
+//        dateFormatter.dateFormat = "MM"
+//        let month = dateFormatter.string(from: date)
+//        dateFormatter.dateFormat = "yyyy"
+//        let year = dateFormatter.string(from: date)
+//        
+//        return "\(day) th\(month)"
+//    }
+    
+    func toDatedmySlash() -> String {
+        let unixtimeInterval = self
+        let date = Date(timeIntervalSince1970: TimeInterval(unixtimeInterval))
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC +7:00")
+        dateFormatter.locale = NSLocale.current
+        
+        dateFormatter.dateFormat = "dd"
+        let day = dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "MM"
+        let month = dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "yyyy"
+        let year = dateFormatter.string(from: date)
+        
+        return "\(day)/\(month)/\(year)"
+    }
+}
+
+extension Date {
+    func getDateFor(days: Int) -> Date? {
+         return Calendar.current.date(byAdding: .day, value: days, to: Date())
+    }
+    
+    func removing(minutes: Int) -> Date? {
+        return Calendar.current.date(byAdding: .minute, value: -(minutes), to: self)
+    }
 }

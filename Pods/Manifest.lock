@@ -126,8 +126,12 @@ PODS:
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
   - PromisesObjC (2.1.1)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
   - ReachabilitySwift (5.0.0)
   - SnapKit (5.6.0)
+  - TagListView (1.4.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -139,8 +143,10 @@ DEPENDENCIES:
   - GoogleSignIn
   - KeychainAccess
   - Kingfisher
+  - R.swift
   - ReachabilitySwift
   - SnapKit
+  - TagListView
 
 SPEC REPOS:
   trunk:
@@ -165,8 +171,11 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - R.swift
+    - R.swift.Library
     - ReachabilitySwift
     - SnapKit
+    - TagListView
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
@@ -190,9 +199,12 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: 6258259e743a06d489528628dcf20f253d49d793
+PODFILE CHECKSUM: e6478f852faecef99d19b064d6927a5a9aa96f2d
 
 COCOAPODS: 1.11.3

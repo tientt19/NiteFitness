@@ -96,3 +96,21 @@ extension LeaveOfficeServiceUrlProtocol {
         return URL(string: self.urlString)
     }
 }
+
+
+// MARK: WordPressServiceUrlProtocol
+protocol WordPressServiceUrlProtocol {
+    var path: String { get }
+    var urlString: String { get }
+    var url: URL! { get }
+}
+
+extension WordPressServiceUrlProtocol {
+    var urlString: String {
+        return String(format: "%@/%@", WORDPRESS_SERVICE_URL, self.path)
+    }
+
+    var url: URL! {
+        return URL(string: self.urlString)
+    }
+}

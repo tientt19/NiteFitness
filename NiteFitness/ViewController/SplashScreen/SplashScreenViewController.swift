@@ -35,7 +35,7 @@ class SplashScreenViewController: BaseViewController {
     // MARK: - Init
     private func setupInit() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.router.goToLoginScreen()
+            self.router.goToMainTabbar()
         }
     }
     

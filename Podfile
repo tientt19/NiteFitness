@@ -24,5 +24,7 @@ target 'NiteFitness' do
   # Support
   pod 'KeychainAccess'
   pod 'SnapKit'
+  pod 'TagListView'
+  pod 'R.swift'
 
 end

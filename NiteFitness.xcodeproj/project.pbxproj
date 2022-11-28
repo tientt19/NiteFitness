@@ -101,6 +101,67 @@
 		FF0B459229101A1F008B3D0A /* NewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B458D29101A1F008B3D0A /* NewFeedViewController.swift */; };
 		FF0B459329101A1F008B3D0A /* NewFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B458E29101A1F008B3D0A /* NewFeedViewModel.swift */; };
 		FF0B459429101A1F008B3D0A /* NewFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF0B458F29101A1F008B3D0A /* NewFeedViewController.xib */; };
+		FF2BA8EF291E769100EE4474 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BA8EE291E769100EE4474 /* TabbarItem.swift */; };
+		FF5299A92934F612007038EB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299A82934F612007038EB /* R.generated.swift */; };
+		FF5299CD2934F678007038EB /* HomeHealthyInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299AD2934F678007038EB /* HomeHealthyInteractorInput.swift */; };
+		FF5299CE2934F678007038EB /* HomeHealthyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299AE2934F678007038EB /* HomeHealthyViewController.swift */; };
+		FF5299CF2934F678007038EB /* HomeHealthyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299AF2934F678007038EB /* HomeHealthyViewModel.swift */; };
+		FF5299D02934F678007038EB /* HomeHealthyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299B02934F678007038EB /* HomeHealthyViewController.xib */; };
+		FF5299D12934F678007038EB /* CellCollectionHealthyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299B22934F678007038EB /* CellCollectionHealthyFilter.swift */; };
+		FF5299D22934F678007038EB /* CellCollectionHealthyFilter.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299B32934F678007038EB /* CellCollectionHealthyFilter.xib */; };
+		FF5299D32934F678007038EB /* HomeHealthyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299B42934F678007038EB /* HomeHealthyRouter.swift */; };
+		FF5299D42934F678007038EB /* HeaderCollectionHealthyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299B72934F678007038EB /* HeaderCollectionHealthyCategory.swift */; };
+		FF5299D52934F678007038EB /* HeaderCollectionHealthyCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299B82934F678007038EB /* HeaderCollectionHealthyCategory.xib */; };
+		FF5299D62934F678007038EB /* HealthyCategoryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299B92934F678007038EB /* HealthyCategoryInteractorInput.swift */; };
+		FF5299D72934F678007038EB /* CellCollHealthyCategoryAll.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299BB2934F678007038EB /* CellCollHealthyCategoryAll.xib */; };
+		FF5299D82934F678007038EB /* CellCollHealthyCategoryAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299BC2934F678007038EB /* CellCollHealthyCategoryAll.swift */; };
+		FF5299D92934F678007038EB /* CellCollHealthyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299BE2934F678007038EB /* CellCollHealthyCategory.swift */; };
+		FF5299DA2934F678007038EB /* CellCollHealthyCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299BF2934F678007038EB /* CellCollHealthyCategory.xib */; };
+		FF5299DB2934F678007038EB /* HealthyCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C02934F678007038EB /* HealthyCategoryViewController.swift */; };
+		FF5299DC2934F678007038EB /* HealthyCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C12934F678007038EB /* HealthyCategoryViewModel.swift */; };
+		FF5299DD2934F678007038EB /* HealthyCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299C22934F678007038EB /* HealthyCategoryViewController.xib */; };
+		FF5299DE2934F678007038EB /* HealthyCategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C32934F678007038EB /* HealthyCategoryRouter.swift */; };
+		FF5299DF2934F678007038EB /* CellCollHealthyCategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C52934F678007038EB /* CellCollHealthyCategoryHeader.swift */; };
+		FF5299E02934F678007038EB /* CellCollHealthyCategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299C62934F678007038EB /* CellCollHealthyCategoryHeader.xib */; };
+		FF5299E12934F678007038EB /* HealthyDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C82934F678007038EB /* HealthyDetailRouter.swift */; };
+		FF5299E22934F678007038EB /* HealthyDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299C92934F678007038EB /* HealthyDetailInteractorInput.swift */; };
+		FF5299E32934F678007038EB /* HealthyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299CA2934F678007038EB /* HealthyDetailViewController.swift */; };
+		FF5299E42934F678007038EB /* HealthyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5299CB2934F678007038EB /* HealthyDetailViewController.xib */; };
+		FF5299E52934F678007038EB /* HealthyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299CC2934F678007038EB /* HealthyDetailViewModel.swift */; };
+		FF5299E72934F6C7007038EB /* PostHealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299E62934F6C7007038EB /* PostHealthModel.swift */; };
+		FF5299E92934F786007038EB /* WorkPressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5299E82934F786007038EB /* WorkPressService.swift */; };
+		FF529A0D2934F98C007038EB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299EC2934F98C007038EB /* Roboto-Medium.ttf */; };
+		FF529A0E2934F98C007038EB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299ED2934F98C007038EB /* Roboto-Light.ttf */; };
+		FF529A0F2934F98C007038EB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299EE2934F98C007038EB /* Roboto-Regular.ttf */; };
+		FF529A102934F98C007038EB /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299EF2934F98C007038EB /* Roboto-MediumItalic.ttf */; };
+		FF529A112934F98C007038EB /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F02934F98C007038EB /* Roboto-ThinItalic.ttf */; };
+		FF529A122934F98C007038EB /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F12934F98C007038EB /* Roboto-BoldItalic.ttf */; };
+		FF529A132934F98C007038EB /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F22934F98C007038EB /* Roboto-LightItalic.ttf */; };
+		FF529A142934F98C007038EB /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F32934F98C007038EB /* Roboto-Italic.ttf */; };
+		FF529A152934F98C007038EB /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F42934F98C007038EB /* Roboto-BlackItalic.ttf */; };
+		FF529A162934F98C007038EB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F52934F98C007038EB /* Roboto-Bold.ttf */; };
+		FF529A172934F98C007038EB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F62934F98C007038EB /* Roboto-Thin.ttf */; };
+		FF529A182934F98C007038EB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F72934F98C007038EB /* Roboto-Black.ttf */; };
+		FF529A192934F98C007038EB /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299F92934F98C007038EB /* BeVietnamPro-SemiBold.ttf */; };
+		FF529A1A2934F98C007038EB /* BeVietnamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299FA2934F98C007038EB /* BeVietnamPro-Black.ttf */; };
+		FF529A1B2934F98C007038EB /* BeVietnamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299FC2934F98C007038EB /* BeVietnamPro-Light.ttf */; };
+		FF529A1C2934F98C007038EB /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299FD2934F98C007038EB /* BeVietnamPro-Regular.ttf */; };
+		FF529A1D2934F98C007038EB /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299FE2934F98C007038EB /* BeVietnamPro-Medium.ttf */; };
+		FF529A1E2934F98C007038EB /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF5299FF2934F98C007038EB /* BeVietnamPro-Bold.ttf */; };
+		FF529A1F2934F98C007038EB /* BeVietnamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A002934F98C007038EB /* BeVietnamPro-BlackItalic.ttf */; };
+		FF529A202934F98C007038EB /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF529A012934F98C007038EB /* OFL.txt */; };
+		FF529A212934F98C007038EB /* BeVietnamPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A022934F98C007038EB /* BeVietnamPro-Thin.ttf */; };
+		FF529A222934F98C007038EB /* BeVietnamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A032934F98C007038EB /* BeVietnamPro-Italic.ttf */; };
+		FF529A232934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A042934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf */; };
+		FF529A242934F98C007038EB /* BeVietnamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A052934F98C007038EB /* BeVietnamPro-MediumItalic.ttf */; };
+		FF529A252934F98C007038EB /* BeVietnamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A062934F98C007038EB /* BeVietnamPro-BoldItalic.ttf */; };
+		FF529A262934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A072934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf */; };
+		FF529A272934F98C007038EB /* BeVietnamPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A082934F98C007038EB /* BeVietnamPro-ExtraLight.ttf */; };
+		FF529A282934F98C007038EB /* BeVietnamPro-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A092934F98C007038EB /* BeVietnamPro-ThinItalic.ttf */; };
+		FF529A292934F98C007038EB /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A0A2934F98C007038EB /* BeVietnamPro-ExtraBold.ttf */; };
+		FF529A2A2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A0B2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf */; };
+		FF529A2B2934F98C007038EB /* BeVietnamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A0C2934F98C007038EB /* BeVietnamPro-LightItalic.ttf */; };
+		FF529A2D2934FA9F007038EB /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529A2C2934FA9F007038EB /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +262,67 @@
 		FF0B458D29101A1F008B3D0A /* NewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewController.swift; sourceTree = "<group>"; };
 		FF0B458E29101A1F008B3D0A /* NewFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewModel.swift; sourceTree = "<group>"; };
 		FF0B458F29101A1F008B3D0A /* NewFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFeedViewController.xib; sourceTree = "<group>"; };
+		FF2BA8EE291E769100EE4474 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
+		FF5299A82934F612007038EB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		FF5299AD2934F678007038EB /* HomeHealthyInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHealthyInteractorInput.swift; sourceTree = "<group>"; };
+		FF5299AE2934F678007038EB /* HomeHealthyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHealthyViewController.swift; sourceTree = "<group>"; };
+		FF5299AF2934F678007038EB /* HomeHealthyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHealthyViewModel.swift; sourceTree = "<group>"; };
+		FF5299B02934F678007038EB /* HomeHealthyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHealthyViewController.xib; sourceTree = "<group>"; };
+		FF5299B22934F678007038EB /* CellCollectionHealthyFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollectionHealthyFilter.swift; sourceTree = "<group>"; };
+		FF5299B32934F678007038EB /* CellCollectionHealthyFilter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCollectionHealthyFilter.xib; sourceTree = "<group>"; };
+		FF5299B42934F678007038EB /* HomeHealthyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHealthyRouter.swift; sourceTree = "<group>"; };
+		FF5299B72934F678007038EB /* HeaderCollectionHealthyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionHealthyCategory.swift; sourceTree = "<group>"; };
+		FF5299B82934F678007038EB /* HeaderCollectionHealthyCategory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCollectionHealthyCategory.xib; sourceTree = "<group>"; };
+		FF5299B92934F678007038EB /* HealthyCategoryInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyCategoryInteractorInput.swift; sourceTree = "<group>"; };
+		FF5299BB2934F678007038EB /* CellCollHealthyCategoryAll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCollHealthyCategoryAll.xib; sourceTree = "<group>"; };
+		FF5299BC2934F678007038EB /* CellCollHealthyCategoryAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollHealthyCategoryAll.swift; sourceTree = "<group>"; };
+		FF5299BE2934F678007038EB /* CellCollHealthyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollHealthyCategory.swift; sourceTree = "<group>"; };
+		FF5299BF2934F678007038EB /* CellCollHealthyCategory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCollHealthyCategory.xib; sourceTree = "<group>"; };
+		FF5299C02934F678007038EB /* HealthyCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyCategoryViewController.swift; sourceTree = "<group>"; };
+		FF5299C12934F678007038EB /* HealthyCategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyCategoryViewModel.swift; sourceTree = "<group>"; };
+		FF5299C22934F678007038EB /* HealthyCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthyCategoryViewController.xib; sourceTree = "<group>"; };
+		FF5299C32934F678007038EB /* HealthyCategoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyCategoryRouter.swift; sourceTree = "<group>"; };
+		FF5299C52934F678007038EB /* CellCollHealthyCategoryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollHealthyCategoryHeader.swift; sourceTree = "<group>"; };
+		FF5299C62934F678007038EB /* CellCollHealthyCategoryHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCollHealthyCategoryHeader.xib; sourceTree = "<group>"; };
+		FF5299C82934F678007038EB /* HealthyDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyDetailRouter.swift; sourceTree = "<group>"; };
+		FF5299C92934F678007038EB /* HealthyDetailInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyDetailInteractorInput.swift; sourceTree = "<group>"; };
+		FF5299CA2934F678007038EB /* HealthyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyDetailViewController.swift; sourceTree = "<group>"; };
+		FF5299CB2934F678007038EB /* HealthyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthyDetailViewController.xib; sourceTree = "<group>"; };
+		FF5299CC2934F678007038EB /* HealthyDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthyDetailViewModel.swift; sourceTree = "<group>"; };
+		FF5299E62934F6C7007038EB /* PostHealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHealthModel.swift; sourceTree = "<group>"; };
+		FF5299E82934F786007038EB /* WorkPressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkPressService.swift; sourceTree = "<group>"; };
+		FF5299EC2934F98C007038EB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FF5299ED2934F98C007038EB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		FF5299EE2934F98C007038EB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FF5299EF2934F98C007038EB /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FF5299F02934F98C007038EB /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FF5299F12934F98C007038EB /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FF5299F22934F98C007038EB /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		FF5299F32934F98C007038EB /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		FF5299F42934F98C007038EB /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FF5299F52934F98C007038EB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		FF5299F62934F98C007038EB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		FF5299F72934F98C007038EB /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		FF5299F92934F98C007038EB /* BeVietnamPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		FF5299FB2934F98C007038EB /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/BeVietnamPro-Black.ttf"; sourceTree = "<group>"; };
+		FF5299FC2934F98C007038EB /* BeVietnamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Light.ttf"; sourceTree = "<group>"; };
+		FF5299FD2934F98C007038EB /* BeVietnamPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Regular.ttf"; sourceTree = "<group>"; };
+		FF5299FE2934F98C007038EB /* BeVietnamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Medium.ttf"; sourceTree = "<group>"; };
+		FF5299FF2934F98C007038EB /* BeVietnamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Bold.ttf"; sourceTree = "<group>"; };
+		FF529A002934F98C007038EB /* BeVietnamPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FF529A012934F98C007038EB /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		FF529A022934F98C007038EB /* BeVietnamPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Thin.ttf"; sourceTree = "<group>"; };
+		FF529A032934F98C007038EB /* BeVietnamPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Italic.ttf"; sourceTree = "<group>"; };
+		FF529A042934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		FF529A052934F98C007038EB /* BeVietnamPro-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FF529A062934F98C007038EB /* BeVietnamPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FF529A072934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		FF529A082934F98C007038EB /* BeVietnamPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FF529A092934F98C007038EB /* BeVietnamPro-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FF529A0A2934F98C007038EB /* BeVietnamPro-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FF529A0B2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		FF529A0C2934F98C007038EB /* BeVietnamPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		FF529A2C2934FA9F007038EB /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		FF95598A212C6B519F6C1E79 /* Pods-NiteFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteFitness.debug.xcconfig"; path = "Target Support Files/Pods-NiteFitness/Pods-NiteFitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,6 +388,7 @@
 				FF0B44BF2910139B008B3D0A /* ViewController */,
 				FF0B44AB29101347008B3D0A /* AppDelegate.swift */,
 				FF0B44AD29101347008B3D0A /* SceneDelegate.swift */,
+				FF5299EA2934F98C007038EB /* Font */,
 				FF0B44B429101349008B3D0A /* Assets.xcassets */,
 				FF0B44B629101349008B3D0A /* LaunchScreen.storyboard */,
 				FF0B44B929101349008B3D0A /* Info.plist */,
@@ -276,6 +399,7 @@
 		FF0B44BF2910139B008B3D0A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FF5299AB2934F678007038EB /* Healthy */,
 				FF0B44C0291013A3008B3D0A /* SplashScreen */,
 				FF0B458A29101A12008B3D0A /* NewFeed */,
 				FF0B457F291019FE008B3D0A /* Login */,
@@ -304,6 +428,7 @@
 				FF0B44C8291014F5008B3D0A /* BaseViewController.swift */,
 				FF0B44C9291014F5008B3D0A /* InterfaceRepresentable.swift */,
 				FF0B44CD291014F5008B3D0A /* BaseNavigationController.swift */,
+				FF529A2C2934FA9F007038EB /* BaseRouter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -546,6 +671,7 @@
 			isa = PBXGroup;
 			children = (
 				FF0B4519291014F5008B3D0A /* EmptyModel.swift */,
+				FF5299E62934F6C7007038EB /* PostHealthModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -553,8 +679,9 @@
 		FF0B451A291014F5008B3D0A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FF0B451B291014F5008B3D0A /* ServiceAPI.swift */,
 				FF0B451C291014F5008B3D0A /* BaseService */,
+				FF0B451B291014F5008B3D0A /* ServiceAPI.swift */,
+				FF5299E82934F786007038EB /* WorkPressService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -577,6 +704,7 @@
 			children = (
 				FF0B4524291014F5008B3D0A /* MainTabbarController.xib */,
 				FF0B4525291014F5008B3D0A /* MainTabbarController.swift */,
+				FF2BA8EE291E769100EE4474 /* TabbarItem.swift */,
 			);
 			path = MainTabbar;
 			sourceTree = "<group>";
@@ -587,6 +715,7 @@
 				FF0B4527291014F5008B3D0A /* Units.swift */,
 				FF0B4528291014F5008B3D0A /* Utils.swift */,
 				FF0B4529291014F5008B3D0A /* ErrorView.swift */,
+				FF5299A82934F612007038EB /* R.generated.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -632,6 +761,156 @@
 			path = NewFeed;
 			sourceTree = "<group>";
 		};
+		FF5299AB2934F678007038EB /* Healthy */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299AC2934F678007038EB /* Home Healthy */,
+				FF5299B52934F678007038EB /* Healthy Category */,
+				FF5299C72934F678007038EB /* Healthy Detail */,
+			);
+			path = Healthy;
+			sourceTree = "<group>";
+		};
+		FF5299AC2934F678007038EB /* Home Healthy */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299AD2934F678007038EB /* HomeHealthyInteractorInput.swift */,
+				FF5299AE2934F678007038EB /* HomeHealthyViewController.swift */,
+				FF5299AF2934F678007038EB /* HomeHealthyViewModel.swift */,
+				FF5299B02934F678007038EB /* HomeHealthyViewController.xib */,
+				FF5299B12934F678007038EB /* Cell Coll HealthyFilter */,
+				FF5299B42934F678007038EB /* HomeHealthyRouter.swift */,
+			);
+			path = "Home Healthy";
+			sourceTree = "<group>";
+		};
+		FF5299B12934F678007038EB /* Cell Coll HealthyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299B22934F678007038EB /* CellCollectionHealthyFilter.swift */,
+				FF5299B32934F678007038EB /* CellCollectionHealthyFilter.xib */,
+			);
+			path = "Cell Coll HealthyFilter";
+			sourceTree = "<group>";
+		};
+		FF5299B52934F678007038EB /* Healthy Category */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299B62934F678007038EB /* Header Coll HealthyCategory */,
+				FF5299B92934F678007038EB /* HealthyCategoryInteractorInput.swift */,
+				FF5299BA2934F678007038EB /* Cell Coll HealthyCategoryAll */,
+				FF5299BD2934F678007038EB /* Cell Coll HealthyCategory */,
+				FF5299C02934F678007038EB /* HealthyCategoryViewController.swift */,
+				FF5299C12934F678007038EB /* HealthyCategoryViewModel.swift */,
+				FF5299C22934F678007038EB /* HealthyCategoryViewController.xib */,
+				FF5299C32934F678007038EB /* HealthyCategoryRouter.swift */,
+				FF5299C42934F678007038EB /* Cell Coll HealthyCategoryHeader */,
+			);
+			path = "Healthy Category";
+			sourceTree = "<group>";
+		};
+		FF5299B62934F678007038EB /* Header Coll HealthyCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299B72934F678007038EB /* HeaderCollectionHealthyCategory.swift */,
+				FF5299B82934F678007038EB /* HeaderCollectionHealthyCategory.xib */,
+			);
+			path = "Header Coll HealthyCategory";
+			sourceTree = "<group>";
+		};
+		FF5299BA2934F678007038EB /* Cell Coll HealthyCategoryAll */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299BB2934F678007038EB /* CellCollHealthyCategoryAll.xib */,
+				FF5299BC2934F678007038EB /* CellCollHealthyCategoryAll.swift */,
+			);
+			path = "Cell Coll HealthyCategoryAll";
+			sourceTree = "<group>";
+		};
+		FF5299BD2934F678007038EB /* Cell Coll HealthyCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299BE2934F678007038EB /* CellCollHealthyCategory.swift */,
+				FF5299BF2934F678007038EB /* CellCollHealthyCategory.xib */,
+			);
+			path = "Cell Coll HealthyCategory";
+			sourceTree = "<group>";
+		};
+		FF5299C42934F678007038EB /* Cell Coll HealthyCategoryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299C52934F678007038EB /* CellCollHealthyCategoryHeader.swift */,
+				FF5299C62934F678007038EB /* CellCollHealthyCategoryHeader.xib */,
+			);
+			path = "Cell Coll HealthyCategoryHeader";
+			sourceTree = "<group>";
+		};
+		FF5299C72934F678007038EB /* Healthy Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299C82934F678007038EB /* HealthyDetailRouter.swift */,
+				FF5299C92934F678007038EB /* HealthyDetailInteractorInput.swift */,
+				FF5299CA2934F678007038EB /* HealthyDetailViewController.swift */,
+				FF5299CB2934F678007038EB /* HealthyDetailViewController.xib */,
+				FF5299CC2934F678007038EB /* HealthyDetailViewModel.swift */,
+			);
+			path = "Healthy Detail";
+			sourceTree = "<group>";
+		};
+		FF5299EA2934F98C007038EB /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299EB2934F98C007038EB /* Roboto */,
+				FF5299F82934F98C007038EB /* BeVietnamPro */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		FF5299EB2934F98C007038EB /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299EC2934F98C007038EB /* Roboto-Medium.ttf */,
+				FF5299ED2934F98C007038EB /* Roboto-Light.ttf */,
+				FF5299EE2934F98C007038EB /* Roboto-Regular.ttf */,
+				FF5299EF2934F98C007038EB /* Roboto-MediumItalic.ttf */,
+				FF5299F02934F98C007038EB /* Roboto-ThinItalic.ttf */,
+				FF5299F12934F98C007038EB /* Roboto-BoldItalic.ttf */,
+				FF5299F22934F98C007038EB /* Roboto-LightItalic.ttf */,
+				FF5299F32934F98C007038EB /* Roboto-Italic.ttf */,
+				FF5299F42934F98C007038EB /* Roboto-BlackItalic.ttf */,
+				FF5299F52934F98C007038EB /* Roboto-Bold.ttf */,
+				FF5299F62934F98C007038EB /* Roboto-Thin.ttf */,
+				FF5299F72934F98C007038EB /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		FF5299F82934F98C007038EB /* BeVietnamPro */ = {
+			isa = PBXGroup;
+			children = (
+				FF5299F92934F98C007038EB /* BeVietnamPro-SemiBold.ttf */,
+				FF5299FA2934F98C007038EB /* BeVietnamPro-Black.ttf */,
+				FF5299FC2934F98C007038EB /* BeVietnamPro-Light.ttf */,
+				FF5299FD2934F98C007038EB /* BeVietnamPro-Regular.ttf */,
+				FF5299FE2934F98C007038EB /* BeVietnamPro-Medium.ttf */,
+				FF5299FF2934F98C007038EB /* BeVietnamPro-Bold.ttf */,
+				FF529A002934F98C007038EB /* BeVietnamPro-BlackItalic.ttf */,
+				FF529A012934F98C007038EB /* OFL.txt */,
+				FF529A022934F98C007038EB /* BeVietnamPro-Thin.ttf */,
+				FF529A032934F98C007038EB /* BeVietnamPro-Italic.ttf */,
+				FF529A042934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf */,
+				FF529A052934F98C007038EB /* BeVietnamPro-MediumItalic.ttf */,
+				FF529A062934F98C007038EB /* BeVietnamPro-BoldItalic.ttf */,
+				FF529A072934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf */,
+				FF529A082934F98C007038EB /* BeVietnamPro-ExtraLight.ttf */,
+				FF529A092934F98C007038EB /* BeVietnamPro-ThinItalic.ttf */,
+				FF529A0A2934F98C007038EB /* BeVietnamPro-ExtraBold.ttf */,
+				FF529A0B2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf */,
+				FF529A0C2934F98C007038EB /* BeVietnamPro-LightItalic.ttf */,
+			);
+			path = BeVietnamPro;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -640,6 +919,7 @@
 			buildConfigurationList = FF0B44BC29101349008B3D0A /* Build configuration list for PBXNativeTarget "NiteFitness" */;
 			buildPhases = (
 				3CE81941F35505CCC37BB789 /* [CP] Check Pods Manifest.lock */,
+				FF5299A72934F500007038EB /* ShellScript */,
 				FF0B44A429101347008B3D0A /* Sources */,
 				FF0B44A529101347008B3D0A /* Frameworks */,
 				FF0B44A629101347008B3D0A /* Resources */,
@@ -693,13 +973,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0B44B829101349008B3D0A /* LaunchScreen.storyboard in Resources */,
+				FF5299E42934F678007038EB /* HealthyDetailViewController.xib in Resources */,
 				FF0B44B529101349008B3D0A /* Assets.xcassets in Resources */,
+				FF529A112934F98C007038EB /* Roboto-ThinItalic.ttf in Resources */,
+				FF529A0D2934F98C007038EB /* Roboto-Medium.ttf in Resources */,
+				FF529A192934F98C007038EB /* BeVietnamPro-SemiBold.ttf in Resources */,
+				FF5299E02934F678007038EB /* CellCollHealthyCategoryHeader.xib in Resources */,
+				FF5299DD2934F678007038EB /* HealthyCategoryViewController.xib in Resources */,
 				FF0B452F291014F5008B3D0A /* BackgroundView.xib in Resources */,
+				FF529A282934F98C007038EB /* BeVietnamPro-ThinItalic.ttf in Resources */,
 				FF0B457E2910199A008B3D0A /* SplashScreenViewController.xib in Resources */,
+				FF529A1D2934F98C007038EB /* BeVietnamPro-Medium.ttf in Resources */,
+				FF529A0E2934F98C007038EB /* Roboto-Light.ttf in Resources */,
+				FF5299DA2934F678007038EB /* CellCollHealthyCategory.xib in Resources */,
+				FF529A182934F98C007038EB /* Roboto-Black.ttf in Resources */,
+				FF529A132934F98C007038EB /* Roboto-LightItalic.ttf in Resources */,
+				FF529A1E2934F98C007038EB /* BeVietnamPro-Bold.ttf in Resources */,
+				FF529A1A2934F98C007038EB /* BeVietnamPro-Black.ttf in Resources */,
+				FF529A2B2934F98C007038EB /* BeVietnamPro-LightItalic.ttf in Resources */,
+				FF529A2A2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */,
+				FF529A262934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf in Resources */,
+				FF529A242934F98C007038EB /* BeVietnamPro-MediumItalic.ttf in Resources */,
 				FF0B456E291014F5008B3D0A /* MainTabbarController.xib in Resources */,
+				FF529A142934F98C007038EB /* Roboto-Italic.ttf in Resources */,
+				FF529A1B2934F98C007038EB /* BeVietnamPro-Light.ttf in Resources */,
+				FF529A222934F98C007038EB /* BeVietnamPro-Italic.ttf in Resources */,
+				FF529A162934F98C007038EB /* Roboto-Bold.ttf in Resources */,
+				FF529A232934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf in Resources */,
+				FF529A252934F98C007038EB /* BeVietnamPro-BoldItalic.ttf in Resources */,
+				FF529A212934F98C007038EB /* BeVietnamPro-Thin.ttf in Resources */,
+				FF529A122934F98C007038EB /* Roboto-BoldItalic.ttf in Resources */,
+				FF5299D52934F678007038EB /* HeaderCollectionHealthyCategory.xib in Resources */,
+				FF529A172934F98C007038EB /* Roboto-Thin.ttf in Resources */,
 				FF0B458929101A0A008B3D0A /* LoginViewController.xib in Resources */,
+				FF529A152934F98C007038EB /* Roboto-BlackItalic.ttf in Resources */,
 				FF0B44B329101347008B3D0A /* Main.storyboard in Resources */,
+				FF5299D02934F678007038EB /* HomeHealthyViewController.xib in Resources */,
+				FF529A0F2934F98C007038EB /* Roboto-Regular.ttf in Resources */,
+				FF529A1F2934F98C007038EB /* BeVietnamPro-BlackItalic.ttf in Resources */,
+				FF529A272934F98C007038EB /* BeVietnamPro-ExtraLight.ttf in Resources */,
+				FF529A202934F98C007038EB /* OFL.txt in Resources */,
+				FF529A102934F98C007038EB /* Roboto-MediumItalic.ttf in Resources */,
 				FF0B459429101A1F008B3D0A /* NewFeedViewController.xib in Resources */,
+				FF5299D22934F678007038EB /* CellCollectionHealthyFilter.xib in Resources */,
+				FF5299D72934F678007038EB /* CellCollHealthyCategoryAll.xib in Resources */,
+				FF529A292934F98C007038EB /* BeVietnamPro-ExtraBold.ttf in Resources */,
+				FF529A1C2934F98C007038EB /* BeVietnamPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +1064,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NiteFitness/Pods-NiteFitness-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FF5299A72934F500007038EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -763,13 +1101,19 @@
 				FF0B4555291014F5008B3D0A /* PanModalPresentationDelegate.swift in Sources */,
 				FF0B4572291014F5008B3D0A /* ErrorView.swift in Sources */,
 				FF0B455D291014F5008B3D0A /* SkeletonView.swift in Sources */,
+				FF5299CE2934F678007038EB /* HomeHealthyViewController.swift in Sources */,
+				FF5299D82934F678007038EB /* CellCollHealthyCategoryAll.swift in Sources */,
+				FF5299A92934F612007038EB /* R.generated.swift in Sources */,
 				FF0B4569291014F5008B3D0A /* Log.swift in Sources */,
 				FF0B454D291014F5008B3D0A /* VXPageViewController.swift in Sources */,
+				FF5299DE2934F678007038EB /* HealthyCategoryRouter.swift in Sources */,
+				FF5299D32934F678007038EB /* HomeHealthyRouter.swift in Sources */,
 				FF0B4551291014F5008B3D0A /* PanModalHeight.swift in Sources */,
 				FF0B455C291014F5008B3D0A /* KeyChainManager.swift in Sources */,
 				FF0B456C291014F5008B3D0A /* ApiUrlProtocols.swift in Sources */,
 				FF0B455B291014F5008B3D0A /* RemoteConfigManager.swift in Sources */,
 				FF0B459329101A1F008B3D0A /* NewFeedViewModel.swift in Sources */,
+				FF5299E32934F678007038EB /* HealthyDetailViewController.swift in Sources */,
 				FF0B4531291014F5008B3D0A /* BaseNavigationController.swift in Sources */,
 				FF0B454B291014F5008B3D0A /* VXPageBar.swift in Sources */,
 				FF0B457A2910199A008B3D0A /* SplashScreenRouter.swift in Sources */,
@@ -784,32 +1128,43 @@
 				FF0B454C291014F5008B3D0A /* VXPageItem.swift in Sources */,
 				FF0B458729101A0A008B3D0A /* LoginViewController.swift in Sources */,
 				FF0B4567291014F5008B3D0A /* ServiceAPI.swift in Sources */,
+				FF5299E92934F786007038EB /* WorkPressService.swift in Sources */,
 				FF0B4552291014F5008B3D0A /* PanModalPresentable+UIViewController.swift in Sources */,
 				FF0B4544291014F5008B3D0A /* EmptyDataSetDelegate.swift in Sources */,
 				FF0B457C2910199A008B3D0A /* SplashScreenViewController.swift in Sources */,
 				FF0B4556291014F5008B3D0A /* PanModalAnimator.swift in Sources */,
+				FF5299E72934F6C7007038EB /* PostHealthModel.swift in Sources */,
 				FF0B457D2910199A008B3D0A /* SplashScreenViewModel.swift in Sources */,
 				FF0B4563291014F5008B3D0A /* SKToast.swift in Sources */,
 				FF0B4565291014F5008B3D0A /* InternetConnection.swift in Sources */,
 				FF0B4532291014F5008B3D0A /* Constant.swift in Sources */,
+				FF2BA8EF291E769100EE4474 /* TabbarItem.swift in Sources */,
+				FF5299CF2934F678007038EB /* HomeHealthyViewModel.swift in Sources */,
 				FF0B4536291014F5008B3D0A /* Key.swift in Sources */,
+				FF5299D92934F678007038EB /* CellCollHealthyCategory.swift in Sources */,
+				FF5299DC2934F678007038EB /* HealthyCategoryViewModel.swift in Sources */,
 				FF0B4545291014F5008B3D0A /* EmptyDataSet.swift in Sources */,
 				FF0B455E291014F5008B3D0A /* CloseButton.swift in Sources */,
 				FF0B456B291014F5008B3D0A /* BaseService.swift in Sources */,
 				FF0B4533291014F5008B3D0A /* NotificationName.swift in Sources */,
 				FF0B4564291014F5008B3D0A /* SKUserDefault.swift in Sources */,
 				FF0B453F291014F5008B3D0A /* UIImageView.swift in Sources */,
+				FF5299E12934F678007038EB /* HealthyDetailRouter.swift in Sources */,
+				FF5299DB2934F678007038EB /* HealthyCategoryViewController.swift in Sources */,
 				FF0B4534291014F5008B3D0A /* Common.swift in Sources */,
 				FF0B44B029101347008B3D0A /* ViewController.swift in Sources */,
 				FF0B4542291014F5008B3D0A /* EmptyDataSetView+Extension.swift in Sources */,
 				FF0B4573291014F5008B3D0A /* ProgressPosition.swift in Sources */,
 				FF0B4558291014F5008B3D0A /* PanModalPresentationController.swift in Sources */,
+				FF529A2D2934FA9F007038EB /* BaseRouter.swift in Sources */,
 				FF0B4540291014F5008B3D0A /* UIAlertController.swift in Sources */,
 				FF0B454F291014F5008B3D0A /* PanModalPresentable.swift in Sources */,
 				FF0B458529101A0A008B3D0A /* LoginRouter.swift in Sources */,
+				FF5299E22934F678007038EB /* HealthyDetailInteractorInput.swift in Sources */,
 				FF0B452C291014F5008B3D0A /* CustomView.swift in Sources */,
 				FF0B456F291014F5008B3D0A /* MainTabbarController.swift in Sources */,
 				FF0B4530291014F5008B3D0A /* BackgroundView.swift in Sources */,
+				FF5299CD2934F678007038EB /* HomeHealthyInteractorInput.swift in Sources */,
 				FF0B4537291014F5008B3D0A /* Date.swift in Sources */,
 				FF0B44AC29101347008B3D0A /* AppDelegate.swift in Sources */,
 				FF0B459129101A1F008B3D0A /* NewFeedInteractorInput.swift in Sources */,
@@ -821,12 +1176,17 @@
 				FF0B4550291014F5008B3D0A /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				FF0B4571291014F5008B3D0A /* Utils.swift in Sources */,
 				FF0B4562291014F5008B3D0A /* LocalNotification.swift in Sources */,
+				FF5299D62934F678007038EB /* HealthyCategoryInteractorInput.swift in Sources */,
 				FF0B453B291014F5008B3D0A /* UIColor.swift in Sources */,
+				FF5299DF2934F678007038EB /* CellCollHealthyCategoryHeader.swift in Sources */,
+				FF5299D12934F678007038EB /* CellCollectionHealthyFilter.swift in Sources */,
+				FF5299D42934F678007038EB /* HeaderCollectionHealthyCategory.swift in Sources */,
 				FF0B4566291014F5008B3D0A /* EmptyModel.swift in Sources */,
 				FF0B4541291014F5008B3D0A /* EmptyDataSetView.swift in Sources */,
 				FF0B453A291014F5008B3D0A /* UIView.swift in Sources */,
 				FF0B44AE29101347008B3D0A /* SceneDelegate.swift in Sources */,
 				FF0B455A291014F5008B3D0A /* DimmedView.swift in Sources */,
+				FF5299E52934F678007038EB /* HealthyDetailViewModel.swift in Sources */,
 				FF0B4561291014F5008B3D0A /* PushNotiModel.swift in Sources */,
 				FF0B459229101A1F008B3D0A /* NewFeedViewController.swift in Sources */,
 				FF0B4538291014F5008B3D0A /* UICollectionViewLayout.swift in Sources */,
@@ -857,6 +1217,14 @@
 				FF0B44B729101349008B3D0A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF5299FA2934F98C007038EB /* BeVietnamPro-Black.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5299FB2934F98C007038EB /* en */,
+			);
+			name = "BeVietnamPro-Black.ttf";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

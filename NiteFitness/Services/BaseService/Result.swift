@@ -19,6 +19,18 @@ extension Result where Success: Codable {
             }
         }
     }
+    
+    func unwrapSuccessModelWP() -> Result<[PostHealthModel], Failure> where Success == [PostHealthModel], Failure == APIError {
+        return flatMap { (baseModel) -> Result<[PostHealthModel], Failure> in
+            if !baseModel.isEmpty {
+                return .success(baseModel)
+                
+            } else {
+                let apiError = APIError(message: "Can not unwrap optional \([PostHealthModel].self)", statusCode: -1)
+                return .failure(apiError)
+            }
+        }
+    }
 
     func optionalSuccessModel<T>() -> Result<T?, Failure> where Success == BaseModel<T>, Failure == APIError {
         return map({ $0.data })

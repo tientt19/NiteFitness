@@ -143,3 +143,23 @@ enum NotificationServiceAPI: LeaveOfficeServiceUrlProtocol {
         }
     }
 }
+
+// MARK: - WordPressServiceAPI
+enum WordPressServiceAPI: WordPressServiceUrlProtocol {
+    case posts
+    case postsId(Int)
+    case popularPosts
+    
+    var path: String {
+        switch self {
+        case .posts:
+            return "posts"
+            
+        case .postsId(let id):
+            return "posts/\(id)"
+            
+        case .popularPosts:
+            return "popularPosts"
+        }
+    }
+}
