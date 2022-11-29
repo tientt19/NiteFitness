@@ -17,8 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        window?.overrideUserInterfaceStyle = .light
         self.setInitRootViewController(scene: scene)
+        self.onDisableDarkmode()
     }
+    
+    //MARK: - DISABLE DARKMODE
+    private func onDisableDarkmode() {
+        let iOSVersion = ProcessInfo().operatingSystemVersion.majorVersion
+        if iOSVersion >= 13 { // iOS version < 13.0.0
+            window?.overrideUserInterfaceStyle = .light;
+        }
+    }
+    
     
     func setInitRootViewController(scene: UIScene) {
         guard let windowScene = (scene as? UIWindowScene) else { return }

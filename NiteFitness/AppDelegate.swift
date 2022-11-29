@@ -14,9 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var orientationLock = UIInterfaceOrientationMask.portrait
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         self.setInitRootViewController()
+        self.onDisableDarkmode()
         return true
+    }
+    
+    //MARK: - DISABLE DARKMODE
+    private func onDisableDarkmode() {
+        let iOSVersion = ProcessInfo().operatingSystemVersion.majorVersion
+        if iOSVersion >= 13 { // iOS version < 13.0.0
+            window?.overrideUserInterfaceStyle = .light;
+        }
     }
     
     // MARK: ViewController

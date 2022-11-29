@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import WebKit
 
 // MARK: - ViewProtocol
 protocol HealthyCategoryViewProtocol: AnyObject {
@@ -27,6 +28,7 @@ class HealthyCategoryViewController: BaseViewController {
     
     @IBOutlet weak var coll_HealthyLiving: UICollectionView!
     private var refreshControl: UIRefreshControl?
+    var webView: WKWebView!
     
     private var isLoading = false
     
@@ -172,16 +174,12 @@ extension HealthyCategoryViewController: UICollectionViewDataSource {
 extension HealthyCategoryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        //        if let id = self.viewModel.collectionView(collectionView, cellForItemAt: indexPath).id {
-        //            let vc = HealthyDetailRouter.setupModule(with: id)
-        //            self.navigationController?.pushViewController(vc, animated: true)
-        //        }
-        
         if let link = self.viewModel.collectionView(collectionView, cellForItemAt: indexPath).link {
             guard let url = URL(string: link) else {
                 return
             }
             UIApplication.shared.open(url)
+//            self.onOpenWebView(url: url)
         }
     }
     
@@ -223,5 +221,31 @@ extension HealthyCategoryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+//MARK: - WKNavigationDelegate
+extension HealthyCategoryViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.hideHud()
+    }
+
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        self.showHud()
+    }
+
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        self.hideHud()
+    }
+}
+
+extension HealthyCategoryViewController {
+    //MARK: - OPEN MODAL WEBVIEW
+    private func onOpenWebView(url: URL) {
+        self.webView = WKWebView()
+        self.webView.navigationDelegate = self
+        self.view = self.webView
+        self.webView.load(URLRequest(url: url))
+        self.webView.allowsBackForwardNavigationGestures = true
     }
 }
