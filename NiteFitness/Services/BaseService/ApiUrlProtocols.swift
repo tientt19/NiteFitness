@@ -114,3 +114,37 @@ extension WordPressServiceUrlProtocol {
         return URL(string: self.urlString)
     }
 }
+
+// MARK: FitServiceUrlProtocol
+protocol FitServiceUrlProtocol {
+    var path: String { get }
+    var urlString: String { get }
+    var url: URL! { get }
+}
+
+extension FitServiceUrlProtocol {
+    var urlString: String {
+        return String(format: "%@/%@", FITNESS_SERVICE_URL, path)
+    }
+
+    var url: URL! {
+        return URL(string: self.urlString)
+    }
+}
+
+// MARK: FitnessServiceUrlProtocol
+protocol FitnessServiceUrlProtocol {
+    var path: String { get }
+    var urlString: String { get }
+    var url: URL! { get }
+}
+
+extension FitnessServiceUrlProtocol {
+    var urlString: String {
+        return String(format: "%@/%@", FITNESS_SERVICE_URL, path)
+    }
+
+    var url: URL! {
+        return URL(string: self.urlString)
+    }
+}

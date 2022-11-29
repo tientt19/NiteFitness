@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouriteVideoFitViewController" customModule="_SK" customModuleProvider="target">
+            <connections>
+                <outlet property="tbv_TableView" destination="NBi-V1-YQ9" id="OcU-yg-Nba"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view_NoData" destination="DdZ-2b-hH0" id="Rs2-Xm-J7R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NBi-V1-YQ9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdZ-2b-hH0">
+                    <rect key="frame" x="82" y="380.5" width="250" height="135"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_fit_noLike" translatesAutoresizingMaskIntoConstraints="NO" id="8Ac-7M-WK3">
+                            <rect key="frame" x="84" y="0.0" width="82" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="92" id="5RC-z8-7Om"/>
+                                <constraint firstAttribute="width" constant="82" id="IDH-83-TNo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn chưa có video yêu thích nào" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7e-cN-3Z5">
+                            <rect key="frame" x="0.0" y="116" width="250" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="84p-Id-3iF"/>
+                        <constraint firstItem="8Ac-7M-WK3" firstAttribute="centerX" secondItem="DdZ-2b-hH0" secondAttribute="centerX" id="9PB-bZ-1LK"/>
+                        <constraint firstAttribute="bottom" secondItem="N7e-cN-3Z5" secondAttribute="bottom" id="G4m-6I-8bM"/>
+                        <constraint firstAttribute="trailing" secondItem="N7e-cN-3Z5" secondAttribute="trailing" id="JwQ-fl-JTI"/>
+                        <constraint firstAttribute="height" constant="135" id="Mdu-nq-nL5"/>
+                        <constraint firstItem="N7e-cN-3Z5" firstAttribute="leading" secondItem="DdZ-2b-hH0" secondAttribute="leading" id="P2W-Yd-zil"/>
+                        <constraint firstItem="8Ac-7M-WK3" firstAttribute="top" secondItem="DdZ-2b-hH0" secondAttribute="top" id="xXw-po-gdF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KlH-tW-6zV"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NBi-V1-YQ9" firstAttribute="leading" secondItem="KlH-tW-6zV" secondAttribute="leading" id="aAY-ta-Svu"/>
+                <constraint firstAttribute="bottom" secondItem="NBi-V1-YQ9" secondAttribute="bottom" id="bBq-3p-hVJ"/>
+                <constraint firstItem="NBi-V1-YQ9" firstAttribute="top" secondItem="KlH-tW-6zV" secondAttribute="top" id="cBf-Gp-EF8"/>
+                <constraint firstItem="DdZ-2b-hH0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="w3I-cy-Ipf"/>
+                <constraint firstAttribute="trailing" secondItem="NBi-V1-YQ9" secondAttribute="trailing" id="xjQ-2h-QkV"/>
+                <constraint firstItem="DdZ-2b-hH0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xud-nQ-pBw"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_fit_noLike" width="82" height="92"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

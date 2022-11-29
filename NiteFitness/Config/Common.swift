@@ -11,7 +11,7 @@ import UIKit
 
 //var gVersion = Version()
 //var gWarning = Warning()
-//var gAppLinks = AppLinks()
+var gAppLinks = AppLinks()
 //var gAppShare = AppShare()
 //var gAppSettings = AppSettings()
 
@@ -29,7 +29,7 @@ var gTimeDurationEndCall = 1800
 //var gSocketTimer: SocketIOClient?
 //var gSocketFitness: SocketIOClient?
 
-//var gUser: UserModel?
+var gUser: UserModel?
 //var gRecentWorkouts: [WorkoutModel]?
 var gDeviceToken: String?
 var gFCMToken: String?

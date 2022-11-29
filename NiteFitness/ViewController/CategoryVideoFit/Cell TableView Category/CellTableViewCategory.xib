@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="CellTableViewCategory" customModule="_SK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="69" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="69" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoO-Ce-GF8">
+                        <rect key="frame" x="0.0" y="0.0" width="67" height="137"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OMp-h2-NOw">
+                                <rect key="frame" x="8.5" y="35.5" width="50" height="66.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_fit_yoga" translatesAutoresizingMaskIntoConstraints="NO" id="pbT-S6-h6u">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dc3-Do-G0M"/>
+                                            <constraint firstAttribute="width" constant="50" id="uKL-pQ-Cae"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7l-ZV-IzD">
+                                        <rect key="frame" x="0.0" y="52" width="50" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" red="0.45175683500000002" green="0.46392041439999998" blue="0.47177523370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="zJu-kO-nii"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OMp-h2-NOw" firstAttribute="centerX" secondItem="yoO-Ce-GF8" secondAttribute="centerX" id="qjB-GT-3i1"/>
+                            <constraint firstItem="OMp-h2-NOw" firstAttribute="centerY" secondItem="yoO-Ce-GF8" secondAttribute="centerY" id="sgX-xE-oXz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yoO-Ce-GF8" secondAttribute="trailing" constant="2" id="D9P-l0-888"/>
+                    <constraint firstItem="yoO-Ce-GF8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NiP-bc-h7d"/>
+                    <constraint firstItem="yoO-Ce-GF8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PNd-WT-Gw2"/>
+                    <constraint firstAttribute="bottom" secondItem="yoO-Ce-GF8" secondAttribute="bottom" id="aXI-Qe-W3w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img_CategoryExercise" destination="pbT-S6-h6u" id="5Kh-Aj-aD8"/>
+                <outlet property="lbl_CategoryExercise" destination="i7l-ZV-IzD" id="arz-cs-Tqc"/>
+                <outlet property="view_Container" destination="yoO-Ce-GF8" id="eFj-dO-Wmr"/>
+            </connections>
+            <point key="canvasLocation" x="-103.62318840579711" y="11.049107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_fit_yoga" width="46" height="46"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

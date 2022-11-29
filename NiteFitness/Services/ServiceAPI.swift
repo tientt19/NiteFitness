@@ -163,3 +163,79 @@ enum WordPressServiceAPI: WordPressServiceUrlProtocol {
         }
     }
 }
+
+//MARK: - FitVideoServiceAPI
+enum FitVideoServiceAPI: FitServiceUrlProtocol {
+    case listVideoExercise
+    case relatedVideoExercise
+    case listCategoryVideoExercise
+    case historyVideoExercise
+    case likedVideoExercise
+    case videoUserHistory
+    case videoUserFavorite
+    case removeFavoriteList(Int)
+    case lastSeen
+    case categories
+    
+    var path: String {
+        switch self {
+        case .listVideoExercise:
+            return "media/videos"
+        case .relatedVideoExercise:
+            return "media/video/related"
+        case .historyVideoExercise:
+            return "media/video-user-history"
+        case .likedVideoExercise:
+            return "media/video-user-favourite"
+        case .listCategoryVideoExercise:
+            return "media/category"
+        case .videoUserHistory:
+            return "media/video-user-history"
+        case .videoUserFavorite:
+            return "media/video-user-favourite"
+        case .removeFavoriteList(let id):
+            return "media/video-user-favourite/\(id)"
+        case .lastSeen:
+            return "media/video-user-history/last-seen"
+        case .categories:
+            return "config/categories?slug=video-tap-luyen"
+        }
+    }
+}
+
+enum MediaServiceAPI: FitnessServiceUrlProtocol {
+    case attribute
+    case category
+    case topic(String?)
+    case coach(String?)
+    case video(Int?)
+    case detailVideo(Int?)
+    case relatedVideo
+    case videoUserHistory
+    case videos
+
+    var path: String {
+        switch self {
+        case .attribute:
+            return "media/attribute"
+        case .category:
+            return "media/category"
+        case .topic(let id):
+            return "media/topic\(id.toURLPath())"
+        case .coach(let id):
+            return "fitness/coach\(id.toURLPath())"
+        case .video(let id):
+            let url: String? = String(id ?? -1) == "-1" ? nil : String(id ?? -1)
+            return "media/videos\(url.toURLPath())"
+        case .detailVideo(let id):
+            let url: String? = String(id ?? -1) == "-1" ? nil : String(id ?? -1)
+            return "media/video\(url.toURLPath())"
+        case .relatedVideo:
+            return "media/video/related"
+        case .videoUserHistory:
+            return "media/video-user-history"
+        case .videos:
+            return "media/videos"
+        }
+    }
+}

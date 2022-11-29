@@ -22,6 +22,9 @@ PODS:
   - Firebase/Database (10.0.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 10.0.0)
+  - Firebase/DynamicLinks (10.0.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 10.0.0)
   - FirebaseAnalytics (10.0.0):
     - FirebaseAnalytics/AdIdSupport (= 10.0.0)
     - FirebaseCore (~> 10.0)
@@ -61,6 +64,8 @@ PODS:
   - FirebaseDatabase (10.0.0):
     - FirebaseCore (~> 10.0)
     - leveldb-library (~> 1.22)
+  - FirebaseDynamicLinks (10.0.0):
+    - FirebaseCore (~> 10.0)
   - FirebaseInstallations (10.0.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/Environment (~> 7.8)
@@ -140,6 +145,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Crashlytics
   - Firebase/Database
+  - Firebase/DynamicLinks
   - GoogleSignIn
   - KeychainAccess
   - Kingfisher
@@ -159,6 +165,7 @@ SPEC REPOS:
     - FirebaseCoreInternal
     - FirebaseCrashlytics
     - FirebaseDatabase
+    - FirebaseDynamicLinks
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -187,6 +194,7 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: 5eb3960335da5ea30115d57d39db6988c4ad06f3
   FirebaseCrashlytics: 6b0613b548fe096221b5ba6d2f7a9732b451233b
   FirebaseDatabase: b210f8a811d6eb80dc565d9570e8486af06e331b
+  FirebaseDynamicLinks: 37dcd9f082b9c5ea9eb5826e82aef58bbd6fd5c1
   FirebaseInstallations: 7f1c9ae6bd9df6abe9c74124b38fa8740aba5df4
   GoogleAppMeasurement: 7e48a3249792ac35d6f18f107f63f199a7e9d0ce
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
@@ -205,6 +213,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
 
-PODFILE CHECKSUM: e6478f852faecef99d19b064d6927a5a9aa96f2d
+PODFILE CHECKSUM: 424bb69955f590a170ab9dd031511dcfda9b7944
 
 COCOAPODS: 1.11.3

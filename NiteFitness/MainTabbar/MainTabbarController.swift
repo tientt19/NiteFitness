@@ -80,9 +80,38 @@ class MainTabbarController: UITabBarController, UITabBarControllerDelegate {
 //            DoctorDetailViewController.self,
             HomeHealthyViewController.self])
         
+        
+        //MARK: - Page 2
+        let tab_2 = CategoryVideoFitRouter.setupModule()
+        tab_2.tabBarItem = TabbarItem.EXERCISE.item
+        let navigationTab_2 = BaseNavigationController(rootViewController: tab_2)
+        navigationTab_2.setHiddenNavigationBarViewControllers([
+//            HomeFitViewController.self,
+//            PracticeViewController.self,
+//            MyWorkoutViewController.self,
+//            EditListExerciseViewController.self,
+//            DoExerciseViewController.self,
+//            FinishWorkoutViewController.self,
+//            SearchFitViewController.self,
+//            DetailPurposePracticeViewController.self,
+//            BikeWorkoutViewController.self,
+//            WorkoutDetailViewController.self,
+//            BicycleResultViewController.self,
+//            HomeFitContainerViewController.self,
+            VideoFitDetailPlayerViewController.self,
+//            DetailRacingViewController.self,
+//            BlogDetailViewController.self,
+//            PlayVideoViewController.self,
+//            PlayVideoFullViewController.self,
+//            PlayVideoFullFitViewController.self,
+//            DetailAppointmentViewController.self,
+//            DoctorDetailViewController.self,
+            CategoryVideoFitViewController.self])
+        
         // MARK:  Add Tabbar
         self.viewControllers = [
-            tab_1
+            navigationTab_1,
+            navigationTab_2
         ]
         self.delegate = self
         gTabBarController = self

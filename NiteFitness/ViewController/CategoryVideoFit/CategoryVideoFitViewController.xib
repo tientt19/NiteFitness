@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryVideoFitViewController" customModule="_SK" customModuleProvider="target">
+            <connections>
+                <outlet property="tbv_CategoryFit" destination="C8d-TW-TS7" id="9yv-BZ-Xko"/>
+                <outlet property="tbv_VideoFit" destination="DM5-VO-ED0" id="8LW-ZF-YG3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C8d-TW-TS7">
+                    <rect key="frame" x="0.0" y="44" width="99.5" height="852"/>
+                    <color key="backgroundColor" red="0.94371885060000005" green="0.94053870439999998" blue="0.94047170879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DM5-VO-ED0">
+                    <rect key="frame" x="99.5" y="44" width="314.5" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KlH-tW-6zV"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DM5-VO-ED0" firstAttribute="top" secondItem="KlH-tW-6zV" secondAttribute="top" id="2hy-4X-hC8"/>
+                <constraint firstItem="KlH-tW-6zV" firstAttribute="trailing" secondItem="DM5-VO-ED0" secondAttribute="trailing" id="354-lV-VKg"/>
+                <constraint firstItem="KlH-tW-6zV" firstAttribute="bottom" secondItem="DM5-VO-ED0" secondAttribute="bottom" id="Ps2-G5-cvE"/>
+                <constraint firstItem="DM5-VO-ED0" firstAttribute="leading" secondItem="C8d-TW-TS7" secondAttribute="trailing" id="TCt-sl-ULt"/>
+                <constraint firstAttribute="bottom" secondItem="C8d-TW-TS7" secondAttribute="bottom" id="Wmz-0f-Dra"/>
+                <constraint firstItem="C8d-TW-TS7" firstAttribute="width" secondItem="KlH-tW-6zV" secondAttribute="width" multiplier="90:375" id="Yoe-WK-SBA"/>
+                <constraint firstItem="C8d-TW-TS7" firstAttribute="leading" secondItem="KlH-tW-6zV" secondAttribute="leading" id="dkM-lH-Uw6"/>
+                <constraint firstItem="C8d-TW-TS7" firstAttribute="top" secondItem="KlH-tW-6zV" secondAttribute="top" id="lYk-sb-bSv"/>
+            </constraints>
+            <point key="canvasLocation" x="-1891" y="-485"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

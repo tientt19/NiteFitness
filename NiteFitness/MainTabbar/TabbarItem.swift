@@ -28,6 +28,7 @@ extension UITabBar {
 enum TabbarItem {
 //    case HOME
     case HEALTHY
+    case EXERCISE
 //    case STORE
 //    case MESSAGE
 //    case PROFILE
@@ -56,16 +57,16 @@ enum TabbarItem {
             
             return tabBarItem
             
-//        case .STORE:
-//            let tabBarItem = UITabBarItem()
-//            tabBarItem.tag = 2
-//            tabBarItem.title  = "Cửa hàng"
-//            tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1)
-//            tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//            tabBarItem.image = self.tabbarImage(with: R.image.ic_tab_2_false())
-//            tabBarItem.selectedImage = self.tabbarImage(with: R.image.ic_tab_2_true())
-//
-//            return tabBarItem
+        case .EXERCISE:
+            let tabBarItem = UITabBarItem()
+            tabBarItem.tag = 2
+            tabBarItem.title  = "Luyện tập"
+            tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1)
+            tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            tabBarItem.image = self.tabbarImage(with: R.image.ic_fitness())
+            tabBarItem.selectedImage = self.tabbarImage(with: R.image.ic_fitness_selected())
+
+            return tabBarItem
 //
 //        case .MESSAGE:
 //            let tabBarItem = UITabBarItem()

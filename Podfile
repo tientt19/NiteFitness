@@ -17,6 +17,7 @@ target 'NiteFitness' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Core'
+  pod 'Firebase/DynamicLinks'
 
   # Google SDK
   pod 'GoogleSignIn'
@@ -26,5 +27,6 @@ target 'NiteFitness' do
   pod 'SnapKit'
   pod 'TagListView'
   pod 'R.swift'
+#  pod 'RealmSwift', '~>10'
 
 end

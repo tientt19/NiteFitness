@@ -72,7 +72,6 @@
 		FF0B4563291014F5008B3D0A /* SKToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B4513291014F5008B3D0A /* SKToast.swift */; };
 		FF0B4564291014F5008B3D0A /* SKUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B4515291014F5008B3D0A /* SKUserDefault.swift */; };
 		FF0B4565291014F5008B3D0A /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B4517291014F5008B3D0A /* InternetConnection.swift */; };
-		FF0B4566291014F5008B3D0A /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B4519291014F5008B3D0A /* EmptyModel.swift */; };
 		FF0B4567291014F5008B3D0A /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B451B291014F5008B3D0A /* ServiceAPI.swift */; };
 		FF0B4568291014F5008B3D0A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B451D291014F5008B3D0A /* APIError.swift */; };
 		FF0B4569291014F5008B3D0A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B451E291014F5008B3D0A /* Log.swift */; };
@@ -162,6 +161,74 @@
 		FF529A2A2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A0B2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf */; };
 		FF529A2B2934F98C007038EB /* BeVietnamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF529A0C2934F98C007038EB /* BeVietnamPro-LightItalic.ttf */; };
 		FF529A2D2934FA9F007038EB /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529A2C2934FA9F007038EB /* BaseRouter.swift */; };
+		FF529ADE29364E57007038EB /* HistoryVideosFitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA129364E57007038EB /* HistoryVideosFitRouter.swift */; };
+		FF529ADF29364E57007038EB /* HistoryVideosFitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA229364E57007038EB /* HistoryVideosFitViewModel.swift */; };
+		FF529AE029364E57007038EB /* HistoryVideosFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA329364E57007038EB /* HistoryVideosFitViewController.swift */; };
+		FF529AE129364E57007038EB /* HistoryVideosFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AA429364E57007038EB /* HistoryVideosFitViewController.xib */; };
+		FF529AE229364E57007038EB /* HistoryVideosFitInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA529364E57007038EB /* HistoryVideosFitInteractorInput.swift */; };
+		FF529AE329364E57007038EB /* CategoryVideoFitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA629364E57007038EB /* CategoryVideoFitRouter.swift */; };
+		FF529AE429364E57007038EB /* CategoryVideoFitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA729364E57007038EB /* CategoryVideoFitViewModel.swift */; };
+		FF529AE529364E57007038EB /* VideoFitDetailPlayerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AA929364E57007038EB /* VideoFitDetailPlayerRouter.swift */; };
+		FF529AE629364E57007038EB /* VideoFitDetailPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AAA29364E57007038EB /* VideoFitDetailPlayerViewController.xib */; };
+		FF529AE729364E57007038EB /* CellTableViewResolutionVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AAE29364E57007038EB /* CellTableViewResolutionVideo.swift */; };
+		FF529AE829364E57007038EB /* CellTableViewResolutionVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AAF29364E57007038EB /* CellTableViewResolutionVideo.xib */; };
+		FF529AE929364E57007038EB /* VideoResolutionSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AB029364E57007038EB /* VideoResolutionSettingViewController.swift */; };
+		FF529AEA29364E57007038EB /* VideoResolutionSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AB129364E57007038EB /* VideoResolutionSettingViewController.xib */; };
+		FF529AEB29364E57007038EB /* PlayVideoFullFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AB229364E57007038EB /* PlayVideoFullFitViewController.xib */; };
+		FF529AEC29364E57007038EB /* PlayVideoFullFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AB329364E57007038EB /* PlayVideoFullFitViewController.swift */; };
+		FF529AED29364E57007038EB /* CellTableViewSegmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AB629364E57007038EB /* CellTableViewSegmentTime.swift */; };
+		FF529AEE29364E57007038EB /* CellTableViewSegmentTime.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AB729364E57007038EB /* CellTableViewSegmentTime.xib */; };
+		FF529AEF29364E57007038EB /* VideoSegmentSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AB829364E57007038EB /* VideoSegmentSettingViewController.xib */; };
+		FF529AF029364E57007038EB /* VideoSegmentSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AB929364E57007038EB /* VideoSegmentSettingViewController.swift */; };
+		FF529AF129364E57007038EB /* VideoFitDetailPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ABA29364E57007038EB /* VideoFitDetailPlayerViewModel.swift */; };
+		FF529AF229364E57007038EB /* AVPlayerControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529ABC29364E57007038EB /* AVPlayerControlView.xib */; };
+		FF529AF329364E57007038EB /* AVPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ABD29364E57007038EB /* AVPlayerControlView.swift */; };
+		FF529AF429364E57007038EB /* VideoFitDetailPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ABE29364E57007038EB /* VideoFitDetailPlayer+Extension.swift */; };
+		FF529AF529364E57007038EB /* VideoFitDetailPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ABF29364E57007038EB /* VideoFitDetailPlayerViewController.swift */; };
+		FF529AF629364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC029364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift */; };
+		FF529AF729364E57007038EB /* CategoryVideoFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC129364E57007038EB /* CategoryVideoFitViewController.swift */; };
+		FF529AF829364E57007038EB /* FavouriteVideoFitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC329364E57007038EB /* FavouriteVideoFitRouter.swift */; };
+		FF529AF929364E57007038EB /* FavouriteVideoFitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC429364E57007038EB /* FavouriteVideoFitViewModel.swift */; };
+		FF529AFA29364E57007038EB /* FavouriteVideoFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC529364E57007038EB /* FavouriteVideoFitViewController.swift */; };
+		FF529AFB29364E57007038EB /* FavouriteVideoFitInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AC629364E57007038EB /* FavouriteVideoFitInteractorInput.swift */; };
+		FF529AFC29364E57007038EB /* FavouriteVideoFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AC729364E57007038EB /* FavouriteVideoFitViewController.xib */; };
+		FF529AFE29364E57007038EB /* CellTableViewVideoFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ACA29364E57007038EB /* CellTableViewVideoFit.swift */; };
+		FF529AFF29364E57007038EB /* CellTableViewVideoFit.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529ACB29364E57007038EB /* CellTableViewVideoFit.xib */; };
+		FF529B0729364E57007038EB /* CategoryVideoFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AD429364E57007038EB /* CategoryVideoFitViewController.xib */; };
+		FF529B0929364E57007038EB /* CategoryVideoFitInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AD629364E57007038EB /* CategoryVideoFitInteractorInput.swift */; };
+		FF529B0A29364E57007038EB /* CellTableViewCategoryVideoFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529AD829364E57007038EB /* CellTableViewCategoryVideoFit.swift */; };
+		FF529B0B29364E57007038EB /* CellTableViewCategoryVideoFit.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529AD929364E57007038EB /* CellTableViewCategoryVideoFit.xib */; };
+		FF529B0C29364E57007038EB /* CellTableViewCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529ADB29364E57007038EB /* CellTableViewCategory.xib */; };
+		FF529B0D29364E57007038EB /* CellTableViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529ADC29364E57007038EB /* CellTableViewCategory.swift */; };
+		FF529B0F29364EA4007038EB /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B0E29364EA4007038EB /* VideoModel.swift */; };
+		FF529B1129364EDB007038EB /* FitVideoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B1029364EDB007038EB /* FitVideoService.swift */; };
+		FF529B1329364F0A007038EB /* CategoryFitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B1229364F0A007038EB /* CategoryFitModel.swift */; };
+		FF529B152936507D007038EB /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B142936507D007038EB /* EmptyModel.swift */; };
+		FF529B17293655BF007038EB /* VideoResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B16293655BF007038EB /* VideoResolution.swift */; };
+		FF529B1A2936593E007038EB /* AppShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B192936593E007038EB /* AppShare.swift */; };
+		FF529B1C2936597B007038EB /* DynamicLinksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B1B2936597B007038EB /* DynamicLinksManager.swift */; };
+		FF529B1E29365A2F007038EB /* HomeFitnessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B1D29365A2F007038EB /* HomeFitnessModel.swift */; };
+		FF529B2029365A59007038EB /* PageHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B1F29365A59007038EB /* PageHomeModel.swift */; };
+		FF529B2429365ABE007038EB /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2329365ABE007038EB /* Configure.swift */; };
+		FF529B2629365B17007038EB /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2529365B17007038EB /* AuthModel.swift */; };
+		FF529B2829365B43007038EB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2729365B43007038EB /* UserModel.swift */; };
+		FF529B2A29365B69007038EB /* GenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2929365B69007038EB /* GenderModel.swift */; };
+		FF529B2C29365BD8007038EB /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2B29365BD8007038EB /* BannerType.swift */; };
+		FF529B2F29365CEA007038EB /* SKUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B2E29365CEA007038EB /* SKUserDefaults.swift */; };
+		FF529B3129365D8C007038EB /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3029365D8C007038EB /* UILabel.swift */; };
+		FF529B3329365E49007038EB /* SKKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3229365E49007038EB /* SKKey.swift */; };
+		FF529B3529365E6A007038EB /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3429365E6A007038EB /* CoachModel.swift */; };
+		FF529B3729365E84007038EB /* VideoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3629365E84007038EB /* VideoDetailModel.swift */; };
+		FF529B3929365EE3007038EB /* BlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3829365EE3007038EB /* BlogModel.swift */; };
+		FF529B3B29365F24007038EB /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3A29365F24007038EB /* WorkoutModel.swift */; };
+		FF529B3D29365F47007038EB /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3C29365F47007038EB /* MusicModel.swift */; };
+		FF529B4029365FD4007038EB /* WorkoutItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B3F29365FD4007038EB /* WorkoutItemProtocol.swift */; };
+		FF529B422936602A007038EB /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B412936602A007038EB /* AppLink.swift */; };
+		FF529B4629366079007038EB /* AVKits.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B4529366079007038EB /* AVKits.swift */; };
+		FF529B4829366170007038EB /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B4729366170007038EB /* UIViewController.swift */; };
+		FF529B4A293661F1007038EB /* SKButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B49293661F1007038EB /* SKButtonItem.swift */; };
+		FF529B4E293662DE007038EB /* CellCollectionViewVideoFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF529B4C293662DE007038EB /* CellCollectionViewVideoFit.swift */; };
+		FF529B4F293662DE007038EB /* CellCollectionViewVideoFit.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529B4D293662DE007038EB /* CellCollectionViewVideoFit.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,7 +300,6 @@
 		FF0B4513291014F5008B3D0A /* SKToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKToast.swift; sourceTree = "<group>"; };
 		FF0B4515291014F5008B3D0A /* SKUserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKUserDefault.swift; sourceTree = "<group>"; };
 		FF0B4517291014F5008B3D0A /* InternetConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
-		FF0B4519291014F5008B3D0A /* EmptyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
 		FF0B451B291014F5008B3D0A /* ServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		FF0B451D291014F5008B3D0A /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		FF0B451E291014F5008B3D0A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -323,6 +389,74 @@
 		FF529A0B2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		FF529A0C2934F98C007038EB /* BeVietnamPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-LightItalic.ttf"; sourceTree = "<group>"; };
 		FF529A2C2934FA9F007038EB /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		FF529AA129364E57007038EB /* HistoryVideosFitRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVideosFitRouter.swift; sourceTree = "<group>"; };
+		FF529AA229364E57007038EB /* HistoryVideosFitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVideosFitViewModel.swift; sourceTree = "<group>"; };
+		FF529AA329364E57007038EB /* HistoryVideosFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVideosFitViewController.swift; sourceTree = "<group>"; };
+		FF529AA429364E57007038EB /* HistoryVideosFitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVideosFitViewController.xib; sourceTree = "<group>"; };
+		FF529AA529364E57007038EB /* HistoryVideosFitInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVideosFitInteractorInput.swift; sourceTree = "<group>"; };
+		FF529AA629364E57007038EB /* CategoryVideoFitRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVideoFitRouter.swift; sourceTree = "<group>"; };
+		FF529AA729364E57007038EB /* CategoryVideoFitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVideoFitViewModel.swift; sourceTree = "<group>"; };
+		FF529AA929364E57007038EB /* VideoFitDetailPlayerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFitDetailPlayerRouter.swift; sourceTree = "<group>"; };
+		FF529AAA29364E57007038EB /* VideoFitDetailPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoFitDetailPlayerViewController.xib; sourceTree = "<group>"; };
+		FF529AAE29364E57007038EB /* CellTableViewResolutionVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewResolutionVideo.swift; sourceTree = "<group>"; };
+		FF529AAF29364E57007038EB /* CellTableViewResolutionVideo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewResolutionVideo.xib; sourceTree = "<group>"; };
+		FF529AB029364E57007038EB /* VideoResolutionSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoResolutionSettingViewController.swift; sourceTree = "<group>"; };
+		FF529AB129364E57007038EB /* VideoResolutionSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoResolutionSettingViewController.xib; sourceTree = "<group>"; };
+		FF529AB229364E57007038EB /* PlayVideoFullFitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayVideoFullFitViewController.xib; sourceTree = "<group>"; };
+		FF529AB329364E57007038EB /* PlayVideoFullFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVideoFullFitViewController.swift; sourceTree = "<group>"; };
+		FF529AB629364E57007038EB /* CellTableViewSegmentTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewSegmentTime.swift; sourceTree = "<group>"; };
+		FF529AB729364E57007038EB /* CellTableViewSegmentTime.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewSegmentTime.xib; sourceTree = "<group>"; };
+		FF529AB829364E57007038EB /* VideoSegmentSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoSegmentSettingViewController.xib; sourceTree = "<group>"; };
+		FF529AB929364E57007038EB /* VideoSegmentSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSegmentSettingViewController.swift; sourceTree = "<group>"; };
+		FF529ABA29364E57007038EB /* VideoFitDetailPlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFitDetailPlayerViewModel.swift; sourceTree = "<group>"; };
+		FF529ABC29364E57007038EB /* AVPlayerControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVPlayerControlView.xib; sourceTree = "<group>"; };
+		FF529ABD29364E57007038EB /* AVPlayerControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerControlView.swift; sourceTree = "<group>"; };
+		FF529ABE29364E57007038EB /* VideoFitDetailPlayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VideoFitDetailPlayer+Extension.swift"; sourceTree = "<group>"; };
+		FF529ABF29364E57007038EB /* VideoFitDetailPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFitDetailPlayerViewController.swift; sourceTree = "<group>"; };
+		FF529AC029364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoFitDetailPlayerInteractorInput.swift; sourceTree = "<group>"; };
+		FF529AC129364E57007038EB /* CategoryVideoFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVideoFitViewController.swift; sourceTree = "<group>"; };
+		FF529AC329364E57007038EB /* FavouriteVideoFitRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVideoFitRouter.swift; sourceTree = "<group>"; };
+		FF529AC429364E57007038EB /* FavouriteVideoFitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVideoFitViewModel.swift; sourceTree = "<group>"; };
+		FF529AC529364E57007038EB /* FavouriteVideoFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVideoFitViewController.swift; sourceTree = "<group>"; };
+		FF529AC629364E57007038EB /* FavouriteVideoFitInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVideoFitInteractorInput.swift; sourceTree = "<group>"; };
+		FF529AC729364E57007038EB /* FavouriteVideoFitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteVideoFitViewController.xib; sourceTree = "<group>"; };
+		FF529ACA29364E57007038EB /* CellTableViewVideoFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewVideoFit.swift; sourceTree = "<group>"; };
+		FF529ACB29364E57007038EB /* CellTableViewVideoFit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewVideoFit.xib; sourceTree = "<group>"; };
+		FF529AD429364E57007038EB /* CategoryVideoFitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryVideoFitViewController.xib; sourceTree = "<group>"; };
+		FF529AD629364E57007038EB /* CategoryVideoFitInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVideoFitInteractorInput.swift; sourceTree = "<group>"; };
+		FF529AD829364E57007038EB /* CellTableViewCategoryVideoFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCategoryVideoFit.swift; sourceTree = "<group>"; };
+		FF529AD929364E57007038EB /* CellTableViewCategoryVideoFit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewCategoryVideoFit.xib; sourceTree = "<group>"; };
+		FF529ADB29364E57007038EB /* CellTableViewCategory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewCategory.xib; sourceTree = "<group>"; };
+		FF529ADC29364E57007038EB /* CellTableViewCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCategory.swift; sourceTree = "<group>"; };
+		FF529B0E29364EA4007038EB /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		FF529B1029364EDB007038EB /* FitVideoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitVideoService.swift; sourceTree = "<group>"; };
+		FF529B1229364F0A007038EB /* CategoryFitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFitModel.swift; sourceTree = "<group>"; };
+		FF529B142936507D007038EB /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		FF529B16293655BF007038EB /* VideoResolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResolution.swift; sourceTree = "<group>"; };
+		FF529B192936593E007038EB /* AppShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShare.swift; sourceTree = "<group>"; };
+		FF529B1B2936597B007038EB /* DynamicLinksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLinksManager.swift; sourceTree = "<group>"; };
+		FF529B1D29365A2F007038EB /* HomeFitnessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFitnessModel.swift; sourceTree = "<group>"; };
+		FF529B1F29365A59007038EB /* PageHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageHomeModel.swift; sourceTree = "<group>"; };
+		FF529B2329365ABE007038EB /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
+		FF529B2529365B17007038EB /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		FF529B2729365B43007038EB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FF529B2929365B69007038EB /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		FF529B2B29365BD8007038EB /* BannerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerType.swift; sourceTree = "<group>"; };
+		FF529B2E29365CEA007038EB /* SKUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKUserDefaults.swift; sourceTree = "<group>"; };
+		FF529B3029365D8C007038EB /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		FF529B3229365E49007038EB /* SKKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKKey.swift; sourceTree = "<group>"; };
+		FF529B3429365E6A007038EB /* CoachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
+		FF529B3629365E84007038EB /* VideoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailModel.swift; sourceTree = "<group>"; };
+		FF529B3829365EE3007038EB /* BlogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogModel.swift; sourceTree = "<group>"; };
+		FF529B3A29365F24007038EB /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		FF529B3C29365F47007038EB /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		FF529B3F29365FD4007038EB /* WorkoutItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItemProtocol.swift; sourceTree = "<group>"; };
+		FF529B412936602A007038EB /* AppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLink.swift; sourceTree = "<group>"; };
+		FF529B4529366079007038EB /* AVKits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVKits.swift; sourceTree = "<group>"; };
+		FF529B4729366170007038EB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FF529B49293661F1007038EB /* SKButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKButtonItem.swift; sourceTree = "<group>"; };
+		FF529B4C293662DE007038EB /* CellCollectionViewVideoFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCollectionViewVideoFit.swift; sourceTree = "<group>"; };
+		FF529B4D293662DE007038EB /* CellCollectionViewVideoFit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCollectionViewVideoFit.xib; sourceTree = "<group>"; };
 		FF95598A212C6B519F6C1E79 /* Pods-NiteFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteFitness.debug.xcconfig"; path = "Target Support Files/Pods-NiteFitness/Pods-NiteFitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -401,6 +535,7 @@
 			children = (
 				FF5299AB2934F678007038EB /* Healthy */,
 				FF0B44C0291013A3008B3D0A /* SplashScreen */,
+				FF529A9E29364E57007038EB /* CategoryVideoFit */,
 				FF0B458A29101A12008B3D0A /* NewFeed */,
 				FF0B457F291019FE008B3D0A /* Login */,
 			);
@@ -422,6 +557,7 @@
 		FF0B44C6291014F5008B3D0A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FF529B3E29365FC6007038EB /* Other */,
 				FF0B4574291015EC008B3D0A /* MainViewController */,
 				FF0B44CA291014F5008B3D0A /* BackgroundView */,
 				FF0B44C7291014F5008B3D0A /* CustomView.swift */,
@@ -450,6 +586,9 @@
 				FF0B44D1291014F5008B3D0A /* Common.swift */,
 				FF0B44D2291014F5008B3D0A /* SignInConfig.swift */,
 				FF0B44D3291014F5008B3D0A /* Key.swift */,
+				FF529B2329365ABE007038EB /* Configure.swift */,
+				FF529B3229365E49007038EB /* SKKey.swift */,
+				FF529B49293661F1007038EB /* SKButtonItem.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -480,6 +619,8 @@
 				FF0B44DD291014F5008B3D0A /* UIDevice.swift */,
 				FF0B44DE291014F5008B3D0A /* UIImageView.swift */,
 				FF0B44DF291014F5008B3D0A /* UIAlertController.swift */,
+				FF529B3029365D8C007038EB /* UILabel.swift */,
+				FF529B4729366170007038EB /* UIViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -499,6 +640,9 @@
 		FF0B44EA291014F5008B3D0A /* App Kits */ = {
 			isa = PBXGroup;
 			children = (
+				FF529B4429366068007038EB /* AVKits */,
+				FF529B2D29365CD3007038EB /* SKUserDefault */,
+				FF529B182936592B007038EB /* FirebaseKit */,
 				FF0B44EB291014F5008B3D0A /* Alamofire Kit */,
 				FF0B44ED291014F5008B3D0A /* PageViewController */,
 				FF0B44F1291014F5008B3D0A /* PanModal */,
@@ -670,8 +814,19 @@
 		FF0B4518291014F5008B3D0A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FF0B4519291014F5008B3D0A /* EmptyModel.swift */,
 				FF5299E62934F6C7007038EB /* PostHealthModel.swift */,
+				FF529B0E29364EA4007038EB /* VideoModel.swift */,
+				FF529B1229364F0A007038EB /* CategoryFitModel.swift */,
+				FF529B1D29365A2F007038EB /* HomeFitnessModel.swift */,
+				FF529B1F29365A59007038EB /* PageHomeModel.swift */,
+				FF529B2529365B17007038EB /* AuthModel.swift */,
+				FF529B2729365B43007038EB /* UserModel.swift */,
+				FF529B2929365B69007038EB /* GenderModel.swift */,
+				FF529B3429365E6A007038EB /* CoachModel.swift */,
+				FF529B3629365E84007038EB /* VideoDetailModel.swift */,
+				FF529B3829365EE3007038EB /* BlogModel.swift */,
+				FF529B3A29365F24007038EB /* WorkoutModel.swift */,
+				FF529B3C29365F47007038EB /* MusicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -682,6 +837,7 @@
 				FF0B451C291014F5008B3D0A /* BaseService */,
 				FF0B451B291014F5008B3D0A /* ServiceAPI.swift */,
 				FF5299E82934F786007038EB /* WorkPressService.swift */,
+				FF529B1029364EDB007038EB /* FitVideoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -695,6 +851,7 @@
 				FF0B4520291014F5008B3D0A /* BaseService.swift */,
 				FF0B4521291014F5008B3D0A /* ApiUrlProtocols.swift */,
 				FF0B4522291014F5008B3D0A /* BaseModel.swift */,
+				FF529B142936507D007038EB /* EmptyModel.swift */,
 			);
 			path = BaseService;
 			sourceTree = "<group>";
@@ -724,6 +881,8 @@
 			isa = PBXGroup;
 			children = (
 				FF0B452B291014F5008B3D0A /* ProgressPosition.swift */,
+				FF529B16293655BF007038EB /* VideoResolution.swift */,
+				FF529B2B29365BD8007038EB /* BannerType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -776,10 +935,10 @@
 			children = (
 				FF5299AD2934F678007038EB /* HomeHealthyInteractorInput.swift */,
 				FF5299AE2934F678007038EB /* HomeHealthyViewController.swift */,
+				FF5299B42934F678007038EB /* HomeHealthyRouter.swift */,
 				FF5299AF2934F678007038EB /* HomeHealthyViewModel.swift */,
 				FF5299B02934F678007038EB /* HomeHealthyViewController.xib */,
 				FF5299B12934F678007038EB /* Cell Coll HealthyFilter */,
-				FF5299B42934F678007038EB /* HomeHealthyRouter.swift */,
 			);
 			path = "Home Healthy";
 			sourceTree = "<group>";
@@ -797,10 +956,10 @@
 			isa = PBXGroup;
 			children = (
 				FF5299B62934F678007038EB /* Header Coll HealthyCategory */,
-				FF5299B92934F678007038EB /* HealthyCategoryInteractorInput.swift */,
 				FF5299BA2934F678007038EB /* Cell Coll HealthyCategoryAll */,
 				FF5299BD2934F678007038EB /* Cell Coll HealthyCategory */,
 				FF5299C02934F678007038EB /* HealthyCategoryViewController.swift */,
+				FF5299B92934F678007038EB /* HealthyCategoryInteractorInput.swift */,
 				FF5299C12934F678007038EB /* HealthyCategoryViewModel.swift */,
 				FF5299C22934F678007038EB /* HealthyCategoryViewController.xib */,
 				FF5299C32934F678007038EB /* HealthyCategoryRouter.swift */,
@@ -911,6 +1070,192 @@
 			path = BeVietnamPro;
 			sourceTree = "<group>";
 		};
+		FF529A9E29364E57007038EB /* CategoryVideoFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B4B293662DE007038EB /* Cell CollectionView VideoFit */,
+				FF529AC929364E57007038EB /* Cell TableView VideoFit */,
+				FF529AC229364E57007038EB /* FavouriteVideoFit */,
+				FF529AA829364E57007038EB /* VideoFitDetailPlayer */,
+				FF529AA029364E57007038EB /* HistoryVideosFit */,
+				FF529AA629364E57007038EB /* CategoryVideoFitRouter.swift */,
+				FF529AA729364E57007038EB /* CategoryVideoFitViewModel.swift */,
+				FF529AC129364E57007038EB /* CategoryVideoFitViewController.swift */,
+				FF529AD429364E57007038EB /* CategoryVideoFitViewController.xib */,
+				FF529AD629364E57007038EB /* CategoryVideoFitInteractorInput.swift */,
+				FF529AD729364E57007038EB /* Cell TableView CategoryVideoFit */,
+				FF529ADA29364E57007038EB /* Cell TableView Category */,
+			);
+			path = CategoryVideoFit;
+			sourceTree = "<group>";
+		};
+		FF529AA029364E57007038EB /* HistoryVideosFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AA129364E57007038EB /* HistoryVideosFitRouter.swift */,
+				FF529AA229364E57007038EB /* HistoryVideosFitViewModel.swift */,
+				FF529AA329364E57007038EB /* HistoryVideosFitViewController.swift */,
+				FF529AA429364E57007038EB /* HistoryVideosFitViewController.xib */,
+				FF529AA529364E57007038EB /* HistoryVideosFitInteractorInput.swift */,
+			);
+			path = HistoryVideosFit;
+			sourceTree = "<group>";
+		};
+		FF529AA829364E57007038EB /* VideoFitDetailPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AA929364E57007038EB /* VideoFitDetailPlayerRouter.swift */,
+				FF529AAA29364E57007038EB /* VideoFitDetailPlayerViewController.xib */,
+				FF529AAB29364E57007038EB /* PlayVideoFullFit */,
+				FF529ABA29364E57007038EB /* VideoFitDetailPlayerViewModel.swift */,
+				FF529ABB29364E57007038EB /* AVPlayerControlView */,
+				FF529ABE29364E57007038EB /* VideoFitDetailPlayer+Extension.swift */,
+				FF529ABF29364E57007038EB /* VideoFitDetailPlayerViewController.swift */,
+				FF529AC029364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift */,
+			);
+			path = VideoFitDetailPlayer;
+			sourceTree = "<group>";
+		};
+		FF529AAB29364E57007038EB /* PlayVideoFullFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AAC29364E57007038EB /* VideoResolutionSettingViewController */,
+				FF529AB229364E57007038EB /* PlayVideoFullFitViewController.xib */,
+				FF529AB329364E57007038EB /* PlayVideoFullFitViewController.swift */,
+				FF529AB429364E57007038EB /* VideoSegmentSettingViewController */,
+			);
+			path = PlayVideoFullFit;
+			sourceTree = "<group>";
+		};
+		FF529AAC29364E57007038EB /* VideoResolutionSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AAD29364E57007038EB /* Cell TableView ResolutionVideo */,
+				FF529AB029364E57007038EB /* VideoResolutionSettingViewController.swift */,
+				FF529AB129364E57007038EB /* VideoResolutionSettingViewController.xib */,
+			);
+			path = VideoResolutionSettingViewController;
+			sourceTree = "<group>";
+		};
+		FF529AAD29364E57007038EB /* Cell TableView ResolutionVideo */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AAE29364E57007038EB /* CellTableViewResolutionVideo.swift */,
+				FF529AAF29364E57007038EB /* CellTableViewResolutionVideo.xib */,
+			);
+			path = "Cell TableView ResolutionVideo";
+			sourceTree = "<group>";
+		};
+		FF529AB429364E57007038EB /* VideoSegmentSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AB529364E57007038EB /* Cell TableView SegmentTime */,
+				FF529AB829364E57007038EB /* VideoSegmentSettingViewController.xib */,
+				FF529AB929364E57007038EB /* VideoSegmentSettingViewController.swift */,
+			);
+			path = VideoSegmentSettingViewController;
+			sourceTree = "<group>";
+		};
+		FF529AB529364E57007038EB /* Cell TableView SegmentTime */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AB629364E57007038EB /* CellTableViewSegmentTime.swift */,
+				FF529AB729364E57007038EB /* CellTableViewSegmentTime.xib */,
+			);
+			path = "Cell TableView SegmentTime";
+			sourceTree = "<group>";
+		};
+		FF529ABB29364E57007038EB /* AVPlayerControlView */ = {
+			isa = PBXGroup;
+			children = (
+				FF529ABC29364E57007038EB /* AVPlayerControlView.xib */,
+				FF529ABD29364E57007038EB /* AVPlayerControlView.swift */,
+			);
+			path = AVPlayerControlView;
+			sourceTree = "<group>";
+		};
+		FF529AC229364E57007038EB /* FavouriteVideoFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AC329364E57007038EB /* FavouriteVideoFitRouter.swift */,
+				FF529AC429364E57007038EB /* FavouriteVideoFitViewModel.swift */,
+				FF529AC529364E57007038EB /* FavouriteVideoFitViewController.swift */,
+				FF529AC629364E57007038EB /* FavouriteVideoFitInteractorInput.swift */,
+				FF529AC729364E57007038EB /* FavouriteVideoFitViewController.xib */,
+			);
+			path = FavouriteVideoFit;
+			sourceTree = "<group>";
+		};
+		FF529AC929364E57007038EB /* Cell TableView VideoFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529ACA29364E57007038EB /* CellTableViewVideoFit.swift */,
+				FF529ACB29364E57007038EB /* CellTableViewVideoFit.xib */,
+			);
+			path = "Cell TableView VideoFit";
+			sourceTree = "<group>";
+		};
+		FF529AD729364E57007038EB /* Cell TableView CategoryVideoFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529AD829364E57007038EB /* CellTableViewCategoryVideoFit.swift */,
+				FF529AD929364E57007038EB /* CellTableViewCategoryVideoFit.xib */,
+			);
+			path = "Cell TableView CategoryVideoFit";
+			sourceTree = "<group>";
+		};
+		FF529ADA29364E57007038EB /* Cell TableView Category */ = {
+			isa = PBXGroup;
+			children = (
+				FF529ADB29364E57007038EB /* CellTableViewCategory.xib */,
+				FF529ADC29364E57007038EB /* CellTableViewCategory.swift */,
+			);
+			path = "Cell TableView Category";
+			sourceTree = "<group>";
+		};
+		FF529B182936592B007038EB /* FirebaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B412936602A007038EB /* AppLink.swift */,
+				FF529B192936593E007038EB /* AppShare.swift */,
+				FF529B1B2936597B007038EB /* DynamicLinksManager.swift */,
+			);
+			path = FirebaseKit;
+			sourceTree = "<group>";
+		};
+		FF529B2D29365CD3007038EB /* SKUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B2E29365CEA007038EB /* SKUserDefaults.swift */,
+			);
+			path = SKUserDefault;
+			sourceTree = "<group>";
+		};
+		FF529B3E29365FC6007038EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B3F29365FD4007038EB /* WorkoutItemProtocol.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FF529B4429366068007038EB /* AVKits */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B4529366079007038EB /* AVKits.swift */,
+			);
+			path = AVKits;
+			sourceTree = "<group>";
+		};
+		FF529B4B293662DE007038EB /* Cell CollectionView VideoFit */ = {
+			isa = PBXGroup;
+			children = (
+				FF529B4C293662DE007038EB /* CellCollectionViewVideoFit.swift */,
+				FF529B4D293662DE007038EB /* CellCollectionViewVideoFit.xib */,
+			);
+			path = "Cell CollectionView VideoFit";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -976,6 +1321,7 @@
 				FF5299E42934F678007038EB /* HealthyDetailViewController.xib in Resources */,
 				FF0B44B529101349008B3D0A /* Assets.xcassets in Resources */,
 				FF529A112934F98C007038EB /* Roboto-ThinItalic.ttf in Resources */,
+				FF529AE829364E57007038EB /* CellTableViewResolutionVideo.xib in Resources */,
 				FF529A0D2934F98C007038EB /* Roboto-Medium.ttf in Resources */,
 				FF529A192934F98C007038EB /* BeVietnamPro-SemiBold.ttf in Resources */,
 				FF5299E02934F678007038EB /* CellCollHealthyCategoryHeader.xib in Resources */,
@@ -988,32 +1334,45 @@
 				FF5299DA2934F678007038EB /* CellCollHealthyCategory.xib in Resources */,
 				FF529A182934F98C007038EB /* Roboto-Black.ttf in Resources */,
 				FF529A132934F98C007038EB /* Roboto-LightItalic.ttf in Resources */,
+				FF529AFC29364E57007038EB /* FavouriteVideoFitViewController.xib in Resources */,
 				FF529A1E2934F98C007038EB /* BeVietnamPro-Bold.ttf in Resources */,
+				FF529B4F293662DE007038EB /* CellCollectionViewVideoFit.xib in Resources */,
 				FF529A1A2934F98C007038EB /* BeVietnamPro-Black.ttf in Resources */,
+				FF529AEB29364E57007038EB /* PlayVideoFullFitViewController.xib in Resources */,
 				FF529A2B2934F98C007038EB /* BeVietnamPro-LightItalic.ttf in Resources */,
 				FF529A2A2934F98C007038EB /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */,
+				FF529AEF29364E57007038EB /* VideoSegmentSettingViewController.xib in Resources */,
 				FF529A262934F98C007038EB /* BeVietnamPro-SemiBoldItalic.ttf in Resources */,
+				FF529AE629364E57007038EB /* VideoFitDetailPlayerViewController.xib in Resources */,
 				FF529A242934F98C007038EB /* BeVietnamPro-MediumItalic.ttf in Resources */,
 				FF0B456E291014F5008B3D0A /* MainTabbarController.xib in Resources */,
 				FF529A142934F98C007038EB /* Roboto-Italic.ttf in Resources */,
 				FF529A1B2934F98C007038EB /* BeVietnamPro-Light.ttf in Resources */,
 				FF529A222934F98C007038EB /* BeVietnamPro-Italic.ttf in Resources */,
+				FF529AEA29364E57007038EB /* VideoResolutionSettingViewController.xib in Resources */,
 				FF529A162934F98C007038EB /* Roboto-Bold.ttf in Resources */,
+				FF529B0B29364E57007038EB /* CellTableViewCategoryVideoFit.xib in Resources */,
 				FF529A232934F98C007038EB /* BeVietnamPro-ExtraLightItalic.ttf in Resources */,
 				FF529A252934F98C007038EB /* BeVietnamPro-BoldItalic.ttf in Resources */,
 				FF529A212934F98C007038EB /* BeVietnamPro-Thin.ttf in Resources */,
+				FF529AE129364E57007038EB /* HistoryVideosFitViewController.xib in Resources */,
+				FF529B0C29364E57007038EB /* CellTableViewCategory.xib in Resources */,
 				FF529A122934F98C007038EB /* Roboto-BoldItalic.ttf in Resources */,
 				FF5299D52934F678007038EB /* HeaderCollectionHealthyCategory.xib in Resources */,
 				FF529A172934F98C007038EB /* Roboto-Thin.ttf in Resources */,
 				FF0B458929101A0A008B3D0A /* LoginViewController.xib in Resources */,
+				FF529AEE29364E57007038EB /* CellTableViewSegmentTime.xib in Resources */,
 				FF529A152934F98C007038EB /* Roboto-BlackItalic.ttf in Resources */,
 				FF0B44B329101347008B3D0A /* Main.storyboard in Resources */,
+				FF529AFF29364E57007038EB /* CellTableViewVideoFit.xib in Resources */,
 				FF5299D02934F678007038EB /* HomeHealthyViewController.xib in Resources */,
 				FF529A0F2934F98C007038EB /* Roboto-Regular.ttf in Resources */,
 				FF529A1F2934F98C007038EB /* BeVietnamPro-BlackItalic.ttf in Resources */,
 				FF529A272934F98C007038EB /* BeVietnamPro-ExtraLight.ttf in Resources */,
+				FF529AF229364E57007038EB /* AVPlayerControlView.xib in Resources */,
 				FF529A202934F98C007038EB /* OFL.txt in Resources */,
 				FF529A102934F98C007038EB /* Roboto-MediumItalic.ttf in Resources */,
+				FF529B0729364E57007038EB /* CategoryVideoFitViewController.xib in Resources */,
 				FF0B459429101A1F008B3D0A /* NewFeedViewController.xib in Resources */,
 				FF5299D22934F678007038EB /* CellCollectionHealthyFilter.xib in Resources */,
 				FF5299D72934F678007038EB /* CellCollHealthyCategoryAll.xib in Resources */,
@@ -1090,6 +1449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF529AE329364E57007038EB /* CategoryVideoFitRouter.swift in Sources */,
 				FF0B4539291014F5008B3D0A /* Error.swift in Sources */,
 				FF0B456A291014F5008B3D0A /* Result.swift in Sources */,
 				FF0B4549291014F5008B3D0A /* TimeInterval.swift in Sources */,
@@ -1100,6 +1460,7 @@
 				FF0B4554291014F5008B3D0A /* PanModalPresenter.swift in Sources */,
 				FF0B4555291014F5008B3D0A /* PanModalPresentationDelegate.swift in Sources */,
 				FF0B4572291014F5008B3D0A /* ErrorView.swift in Sources */,
+				FF529B1E29365A2F007038EB /* HomeFitnessModel.swift in Sources */,
 				FF0B455D291014F5008B3D0A /* SkeletonView.swift in Sources */,
 				FF5299CE2934F678007038EB /* HomeHealthyViewController.swift in Sources */,
 				FF5299D82934F678007038EB /* CellCollHealthyCategoryAll.swift in Sources */,
@@ -1110,29 +1471,41 @@
 				FF5299D32934F678007038EB /* HomeHealthyRouter.swift in Sources */,
 				FF0B4551291014F5008B3D0A /* PanModalHeight.swift in Sources */,
 				FF0B455C291014F5008B3D0A /* KeyChainManager.swift in Sources */,
+				FF529B0D29364E57007038EB /* CellTableViewCategory.swift in Sources */,
 				FF0B456C291014F5008B3D0A /* ApiUrlProtocols.swift in Sources */,
 				FF0B455B291014F5008B3D0A /* RemoteConfigManager.swift in Sources */,
 				FF0B459329101A1F008B3D0A /* NewFeedViewModel.swift in Sources */,
 				FF5299E32934F678007038EB /* HealthyDetailViewController.swift in Sources */,
+				FF529AF629364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift in Sources */,
 				FF0B4531291014F5008B3D0A /* BaseNavigationController.swift in Sources */,
 				FF0B454B291014F5008B3D0A /* VXPageBar.swift in Sources */,
 				FF0B457A2910199A008B3D0A /* SplashScreenRouter.swift in Sources */,
 				FF0B454E291014F5008B3D0A /* PanModalPresentable+Defaults.swift in Sources */,
 				FF0B452D291014F5008B3D0A /* BaseViewController.swift in Sources */,
+				FF529B152936507D007038EB /* EmptyModel.swift in Sources */,
+				FF529AF729364E57007038EB /* CategoryVideoFitViewController.swift in Sources */,
 				FF0B454A291014F5008B3D0A /* Network.swift in Sources */,
+				FF529B0929364E57007038EB /* CategoryVideoFitInteractorInput.swift in Sources */,
 				FF0B457B2910199A008B3D0A /* SplashScreenInteractorInput.swift in Sources */,
 				FF0B4557291014F5008B3D0A /* PanModalPresentationAnimator.swift in Sources */,
+				FF529B3929365EE3007038EB /* BlogModel.swift in Sources */,
+				FF529AFB29364E57007038EB /* FavouriteVideoFitInteractorInput.swift in Sources */,
 				FF0B4548291014F5008B3D0A /* String.swift in Sources */,
 				FF0B455F291014F5008B3D0A /* TagView.swift in Sources */,
 				FF0B4559291014F5008B3D0A /* PanContainerView.swift in Sources */,
+				FF529B0F29364EA4007038EB /* VideoModel.swift in Sources */,
 				FF0B454C291014F5008B3D0A /* VXPageItem.swift in Sources */,
 				FF0B458729101A0A008B3D0A /* LoginViewController.swift in Sources */,
 				FF0B4567291014F5008B3D0A /* ServiceAPI.swift in Sources */,
 				FF5299E92934F786007038EB /* WorkPressService.swift in Sources */,
+				FF529AE529364E57007038EB /* VideoFitDetailPlayerRouter.swift in Sources */,
 				FF0B4552291014F5008B3D0A /* PanModalPresentable+UIViewController.swift in Sources */,
 				FF0B4544291014F5008B3D0A /* EmptyDataSetDelegate.swift in Sources */,
+				FF529B2029365A59007038EB /* PageHomeModel.swift in Sources */,
 				FF0B457C2910199A008B3D0A /* SplashScreenViewController.swift in Sources */,
+				FF529AF029364E57007038EB /* VideoSegmentSettingViewController.swift in Sources */,
 				FF0B4556291014F5008B3D0A /* PanModalAnimator.swift in Sources */,
+				FF529AE729364E57007038EB /* CellTableViewResolutionVideo.swift in Sources */,
 				FF5299E72934F6C7007038EB /* PostHealthModel.swift in Sources */,
 				FF0B457D2910199A008B3D0A /* SplashScreenViewModel.swift in Sources */,
 				FF0B4563291014F5008B3D0A /* SKToast.swift in Sources */,
@@ -1142,56 +1515,95 @@
 				FF5299CF2934F678007038EB /* HomeHealthyViewModel.swift in Sources */,
 				FF0B4536291014F5008B3D0A /* Key.swift in Sources */,
 				FF5299D92934F678007038EB /* CellCollHealthyCategory.swift in Sources */,
+				FF529AEC29364E57007038EB /* PlayVideoFullFitViewController.swift in Sources */,
+				FF529AE429364E57007038EB /* CategoryVideoFitViewModel.swift in Sources */,
 				FF5299DC2934F678007038EB /* HealthyCategoryViewModel.swift in Sources */,
 				FF0B4545291014F5008B3D0A /* EmptyDataSet.swift in Sources */,
 				FF0B455E291014F5008B3D0A /* CloseButton.swift in Sources */,
+				FF529ADE29364E57007038EB /* HistoryVideosFitRouter.swift in Sources */,
 				FF0B456B291014F5008B3D0A /* BaseService.swift in Sources */,
 				FF0B4533291014F5008B3D0A /* NotificationName.swift in Sources */,
 				FF0B4564291014F5008B3D0A /* SKUserDefault.swift in Sources */,
 				FF0B453F291014F5008B3D0A /* UIImageView.swift in Sources */,
+				FF529AFE29364E57007038EB /* CellTableViewVideoFit.swift in Sources */,
 				FF5299E12934F678007038EB /* HealthyDetailRouter.swift in Sources */,
 				FF5299DB2934F678007038EB /* HealthyCategoryViewController.swift in Sources */,
 				FF0B4534291014F5008B3D0A /* Common.swift in Sources */,
+				FF529B1129364EDB007038EB /* FitVideoService.swift in Sources */,
 				FF0B44B029101347008B3D0A /* ViewController.swift in Sources */,
+				FF529B1329364F0A007038EB /* CategoryFitModel.swift in Sources */,
+				FF529B17293655BF007038EB /* VideoResolution.swift in Sources */,
 				FF0B4542291014F5008B3D0A /* EmptyDataSetView+Extension.swift in Sources */,
+				FF529B3329365E49007038EB /* SKKey.swift in Sources */,
+				FF529B2F29365CEA007038EB /* SKUserDefaults.swift in Sources */,
 				FF0B4573291014F5008B3D0A /* ProgressPosition.swift in Sources */,
+				FF529B3129365D8C007038EB /* UILabel.swift in Sources */,
+				FF529B4629366079007038EB /* AVKits.swift in Sources */,
+				FF529B4829366170007038EB /* UIViewController.swift in Sources */,
+				FF529B1A2936593E007038EB /* AppShare.swift in Sources */,
 				FF0B4558291014F5008B3D0A /* PanModalPresentationController.swift in Sources */,
 				FF529A2D2934FA9F007038EB /* BaseRouter.swift in Sources */,
 				FF0B4540291014F5008B3D0A /* UIAlertController.swift in Sources */,
 				FF0B454F291014F5008B3D0A /* PanModalPresentable.swift in Sources */,
+				FF529B2A29365B69007038EB /* GenderModel.swift in Sources */,
+				FF529AFA29364E57007038EB /* FavouriteVideoFitViewController.swift in Sources */,
+				FF529AF129364E57007038EB /* VideoFitDetailPlayerViewModel.swift in Sources */,
 				FF0B458529101A0A008B3D0A /* LoginRouter.swift in Sources */,
 				FF5299E22934F678007038EB /* HealthyDetailInteractorInput.swift in Sources */,
+				FF529B2429365ABE007038EB /* Configure.swift in Sources */,
 				FF0B452C291014F5008B3D0A /* CustomView.swift in Sources */,
 				FF0B456F291014F5008B3D0A /* MainTabbarController.swift in Sources */,
 				FF0B4530291014F5008B3D0A /* BackgroundView.swift in Sources */,
 				FF5299CD2934F678007038EB /* HomeHealthyInteractorInput.swift in Sources */,
 				FF0B4537291014F5008B3D0A /* Date.swift in Sources */,
+				FF529AE929364E57007038EB /* VideoResolutionSettingViewController.swift in Sources */,
+				FF529B3729365E84007038EB /* VideoDetailModel.swift in Sources */,
 				FF0B44AC29101347008B3D0A /* AppDelegate.swift in Sources */,
+				FF529AE229364E57007038EB /* HistoryVideosFitInteractorInput.swift in Sources */,
 				FF0B459129101A1F008B3D0A /* NewFeedInteractorInput.swift in Sources */,
+				FF529AF929364E57007038EB /* FavouriteVideoFitViewModel.swift in Sources */,
+				FF529B422936602A007038EB /* AppLink.swift in Sources */,
 				FF0B452E291014F5008B3D0A /* InterfaceRepresentable.swift in Sources */,
+				FF529B2829365B43007038EB /* UserModel.swift in Sources */,
+				FF529B3D29365F47007038EB /* MusicModel.swift in Sources */,
+				FF529B4A293661F1007038EB /* SKButtonItem.swift in Sources */,
 				FF0B4560291014F5008B3D0A /* TagListView.swift in Sources */,
 				FF0B4547291014F5008B3D0A /* Encodable.swift in Sources */,
+				FF529B4E293662DE007038EB /* CellCollectionViewVideoFit.swift in Sources */,
 				FF0B453E291014F5008B3D0A /* UIDevice.swift in Sources */,
+				FF529B3529365E6A007038EB /* CoachModel.swift in Sources */,
+				FF529B1C2936597B007038EB /* DynamicLinksManager.swift in Sources */,
 				FF0B458829101A0A008B3D0A /* LoginViewModel.swift in Sources */,
 				FF0B4550291014F5008B3D0A /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				FF0B4571291014F5008B3D0A /* Utils.swift in Sources */,
+				FF529B4029365FD4007038EB /* WorkoutItemProtocol.swift in Sources */,
 				FF0B4562291014F5008B3D0A /* LocalNotification.swift in Sources */,
 				FF5299D62934F678007038EB /* HealthyCategoryInteractorInput.swift in Sources */,
+				FF529B2C29365BD8007038EB /* BannerType.swift in Sources */,
 				FF0B453B291014F5008B3D0A /* UIColor.swift in Sources */,
 				FF5299DF2934F678007038EB /* CellCollHealthyCategoryHeader.swift in Sources */,
+				FF529AF529364E57007038EB /* VideoFitDetailPlayerViewController.swift in Sources */,
 				FF5299D12934F678007038EB /* CellCollectionHealthyFilter.swift in Sources */,
 				FF5299D42934F678007038EB /* HeaderCollectionHealthyCategory.swift in Sources */,
-				FF0B4566291014F5008B3D0A /* EmptyModel.swift in Sources */,
+				FF529B2629365B17007038EB /* AuthModel.swift in Sources */,
+				FF529AF829364E57007038EB /* FavouriteVideoFitRouter.swift in Sources */,
+				FF529AF429364E57007038EB /* VideoFitDetailPlayer+Extension.swift in Sources */,
 				FF0B4541291014F5008B3D0A /* EmptyDataSetView.swift in Sources */,
 				FF0B453A291014F5008B3D0A /* UIView.swift in Sources */,
 				FF0B44AE29101347008B3D0A /* SceneDelegate.swift in Sources */,
 				FF0B455A291014F5008B3D0A /* DimmedView.swift in Sources */,
 				FF5299E52934F678007038EB /* HealthyDetailViewModel.swift in Sources */,
+				FF529ADF29364E57007038EB /* HistoryVideosFitViewModel.swift in Sources */,
+				FF529AED29364E57007038EB /* CellTableViewSegmentTime.swift in Sources */,
+				FF529B0A29364E57007038EB /* CellTableViewCategoryVideoFit.swift in Sources */,
+				FF529AE029364E57007038EB /* HistoryVideosFitViewController.swift in Sources */,
 				FF0B4561291014F5008B3D0A /* PushNotiModel.swift in Sources */,
+				FF529B3B29365F24007038EB /* WorkoutModel.swift in Sources */,
 				FF0B459229101A1F008B3D0A /* NewFeedViewController.swift in Sources */,
 				FF0B4538291014F5008B3D0A /* UICollectionViewLayout.swift in Sources */,
 				FF0B4553291014F5008B3D0A /* UIViewController+PanModalPresenter.swift in Sources */,
 				FF0B456D291014F5008B3D0A /* BaseModel.swift in Sources */,
+				FF529AF329364E57007038EB /* AVPlayerControlView.swift in Sources */,
 				FF0B453D291014F5008B3D0A /* UITableView.swift in Sources */,
 				FF0B4535291014F5008B3D0A /* SignInConfig.swift in Sources */,
 				FF0B453C291014F5008B3D0A /* UICollectionView.swift in Sources */,
