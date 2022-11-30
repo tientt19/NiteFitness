@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - RouterProtocol
 protocol HealthyCategoryRouterProtocol: BaseRouterProtocol {
-
+    func onPresentHealthyWebView(url: URL)
 }
 
 // MARK: - HealthyCategory Router
@@ -35,5 +35,11 @@ class HealthyCategoryRouter: BaseRouter {
 
 // MARK: - HealthyCategory RouterProtocol
 extension HealthyCategoryRouter: HealthyCategoryRouterProtocol {
-    
+    func onPresentHealthyWebView(url: URL) {
+        let wvc = UIStoryboard(name: "HealthDetailWebView", bundle: nil).instantiateViewController(withIdentifier: "WebViewController") as! HealthDetailWebView
+        wvc.modalPresentationStyle = .popover
+        wvc.loadWebView(url: url) {
+            self.viewController?.present(wvc, animated: true, completion: nil)
+        }
+    }
 }

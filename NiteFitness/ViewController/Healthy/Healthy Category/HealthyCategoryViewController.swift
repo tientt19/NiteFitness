@@ -178,6 +178,7 @@ extension HealthyCategoryViewController: UICollectionViewDelegate {
             guard let url = URL(string: link) else {
                 return
             }
+            
             UIApplication.shared.open(url)
 //            self.onOpenWebView(url: url)
         }
@@ -242,10 +243,6 @@ extension HealthyCategoryViewController: WKNavigationDelegate {
 extension HealthyCategoryViewController {
     //MARK: - OPEN MODAL WEBVIEW
     private func onOpenWebView(url: URL) {
-        self.webView = WKWebView()
-        self.webView.navigationDelegate = self
-        self.view = self.webView
-        self.webView.load(URLRequest(url: url))
-        self.webView.allowsBackForwardNavigationGestures = true
+        self.router.onPresentHealthyWebView(url: url)
     }
 }
