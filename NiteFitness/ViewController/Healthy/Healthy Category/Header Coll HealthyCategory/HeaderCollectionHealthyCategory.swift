@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol CellCollHealthyCategoryHeaderDelegate {
+    func openWebViewOnTap(url: URL)
+}
+
 class HeaderCollectionHealthyCategory: UICollectionReusableView {
 
     @IBOutlet weak var coll_HealthyLiving: UICollectionView!
+    var delegate: CellCollHealthyCategoryHeaderDelegate!
         
     var model: [PostHealthModel]? {
         didSet {
@@ -33,7 +38,8 @@ extension HeaderCollectionHealthyCategory: UICollectionViewDelegate {
             guard let url = URL(string: link) else {
                 return
             }
-            UIApplication.shared.open(url)
+//            UIApplication.shared.open(url)
+            self.delegate.openWebViewOnTap(url: url)
         }
     }
 }

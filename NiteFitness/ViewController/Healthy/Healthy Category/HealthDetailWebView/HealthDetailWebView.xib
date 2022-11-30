@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealthDetailWebView" customModule="NiteFitness" customModuleProvider="target">
             <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="BOX-Sy-RL4"/>
                 <outlet property="webView" destination="el5-ci-Bb1" id="Oah-h4-b4D"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el5-ci-Bb1">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -31,12 +32,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="el5-ci-Bb1" secondAttribute="bottom" id="0Mp-zP-Hb3"/>
+                <constraint firstAttribute="bottom" secondItem="el5-ci-Bb1" secondAttribute="bottom" id="0Mp-zP-Hb3"/>
                 <constraint firstItem="el5-ci-Bb1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7c0-k2-YSc"/>
                 <constraint firstItem="el5-ci-Bb1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EX7-Rq-Vc7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="el5-ci-Bb1" secondAttribute="trailing" id="yc5-TJ-HfI"/>
             </constraints>
-            <point key="canvasLocation" x="-155" y="-69"/>
+            <point key="canvasLocation" x="8" y="-128"/>
         </view>
     </objects>
     <resources>

@@ -11,11 +11,11 @@ import WebKit
 class HealthDetailWebView: UIViewController {
     
     @IBOutlet private weak var webView: WKWebView!
+    
     var didLoadWebView: (() -> Void)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     func loadWebView(url: URL, completion: @escaping () -> Void) {

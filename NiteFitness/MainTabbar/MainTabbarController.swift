@@ -103,7 +103,7 @@ class MainTabbarController: UITabBarController, UITabBarControllerDelegate {
 //            BlogDetailViewController.self,
 //            PlayVideoViewController.self,
 //            PlayVideoFullViewController.self,
-//            PlayVideoFullFitViewController.self,
+            PlayVideoFullFitViewController.self,
 //            DetailAppointmentViewController.self,
 //            DoctorDetailViewController.self,
             CategoryVideoFitViewController.self])

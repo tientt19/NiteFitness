@@ -36,9 +36,11 @@ class HealthyCategoryRouter: BaseRouter {
 // MARK: - HealthyCategory RouterProtocol
 extension HealthyCategoryRouter: HealthyCategoryRouterProtocol {
     func onPresentHealthyWebView(url: URL) {
-        let wvc = UIStoryboard(name: "HealthDetailWebView", bundle: nil).instantiateViewController(withIdentifier: "WebViewController") as! HealthDetailWebView
-        wvc.modalPresentationStyle = .popover
+        self.showHud()
+        let wvc = HealthDetailWebView(nibName: "HealthDetailWebView", bundle: nil)
+        wvc.modalPresentationStyle = .pageSheet
         wvc.loadWebView(url: url) {
+            self.hideHud()
             self.viewController?.present(wvc, animated: true, completion: nil)
         }
     }

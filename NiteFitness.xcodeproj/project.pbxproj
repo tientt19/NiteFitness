@@ -1121,11 +1121,11 @@
 		FF529AA829364E57007038EB /* VideoFitDetailPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FF529AAB29364E57007038EB /* PlayVideoFullFit */,
+				FF529ABB29364E57007038EB /* AVPlayerControlView */,
 				FF529AA929364E57007038EB /* VideoFitDetailPlayerRouter.swift */,
 				FF529AAA29364E57007038EB /* VideoFitDetailPlayerViewController.xib */,
-				FF529AAB29364E57007038EB /* PlayVideoFullFit */,
 				FF529ABA29364E57007038EB /* VideoFitDetailPlayerViewModel.swift */,
-				FF529ABB29364E57007038EB /* AVPlayerControlView */,
 				FF529ABE29364E57007038EB /* VideoFitDetailPlayer+Extension.swift */,
 				FF529ABF29364E57007038EB /* VideoFitDetailPlayerViewController.swift */,
 				FF529AC029364E57007038EB /* VideoFitDetailPlayerInteractorInput.swift */,
@@ -1136,10 +1136,10 @@
 		FF529AAB29364E57007038EB /* PlayVideoFullFit */ = {
 			isa = PBXGroup;
 			children = (
+				FF529AB429364E57007038EB /* VideoSegmentSettingViewController */,
 				FF529AAC29364E57007038EB /* VideoResolutionSettingViewController */,
 				FF529AB229364E57007038EB /* PlayVideoFullFitViewController.xib */,
 				FF529AB329364E57007038EB /* PlayVideoFullFitViewController.swift */,
-				FF529AB429364E57007038EB /* VideoSegmentSettingViewController */,
 			);
 			path = PlayVideoFullFit;
 			sourceTree = "<group>";

@@ -118,6 +118,7 @@ extension HealthyCategoryViewController: UICollectionViewDataSource {
         case .all:
             if let header = collectionView.dequeueHeader(ofType: HeaderCollectionHealthyCategory.self, for: indexPath) as? HeaderCollectionHealthyCategory {
                 header.model = self.viewModel.onGetListPopularPosts()
+                header.delegate = self
                 return header
             }
             
@@ -179,8 +180,8 @@ extension HealthyCategoryViewController: UICollectionViewDelegate {
                 return
             }
             
-            UIApplication.shared.open(url)
-//            self.onOpenWebView(url: url)
+//            UIApplication.shared.open(url)
+            self.onOpenWebView(url: url)
         }
     }
     
@@ -243,6 +244,13 @@ extension HealthyCategoryViewController: WKNavigationDelegate {
 extension HealthyCategoryViewController {
     //MARK: - OPEN MODAL WEBVIEW
     private func onOpenWebView(url: URL) {
+        self.router.onPresentHealthyWebView(url: url)
+    }
+}
+
+//MARK: - CellCollHealthyCategoryHeaderDelegate
+extension HealthyCategoryViewController: CellCollHealthyCategoryHeaderDelegate {
+    func openWebViewOnTap(url: URL) {
         self.router.onPresentHealthyWebView(url: url)
     }
 }
