@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.setInitRootViewController()
         self.onDisableDarkmode()
+        self.initFirebaseConfigure()
         return true
     }
     
@@ -25,6 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if iOSVersion >= 13 { // iOS version < 13.0.0
             window?.overrideUserInterfaceStyle = .light;
         }
+    }
+    
+    //MARK: - Init Firebase
+    private func initFirebaseConfigure() {
+        FirebaseApp.configure()
     }
     
     // MARK: ViewController

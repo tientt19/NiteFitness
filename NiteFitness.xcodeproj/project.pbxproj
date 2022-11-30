@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6092CB29372BD400C05798 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F6092CA29372BD400C05798 /* GoogleService-Info.plist */; };
 		B942C2ECAEBCFED99EA8C82B /* Pods_NiteFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399571A9E061B315376A5C67 /* Pods_NiteFitness.framework */; };
 		FF0B44AC29101347008B3D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B44AB29101347008B3D0A /* AppDelegate.swift */; };
 		FF0B44AE29101347008B3D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B44AD29101347008B3D0A /* SceneDelegate.swift */; };
@@ -234,6 +235,7 @@
 /* Begin PBXFileReference section */
 		399571A9E061B315376A5C67 /* Pods_NiteFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiteFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46040D2CDD889832914B3B5E /* Pods-NiteFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteFitness.release.xcconfig"; path = "Target Support Files/Pods-NiteFitness/Pods-NiteFitness.release.xcconfig"; sourceTree = "<group>"; };
+		4F6092CA29372BD400C05798 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF0B44A829101347008B3D0A /* NiteFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0B44AB29101347008B3D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF0B44AD29101347008B3D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				FF0B44AD29101347008B3D0A /* SceneDelegate.swift */,
 				FF5299EA2934F98C007038EB /* Font */,
 				FF0B44B429101349008B3D0A /* Assets.xcassets */,
+				4F6092CA29372BD400C05798 /* GoogleService-Info.plist */,
 				FF0B44B629101349008B3D0A /* LaunchScreen.storyboard */,
 				FF0B44B929101349008B3D0A /* Info.plist */,
 			);
@@ -1332,6 +1335,7 @@
 				FF529A1D2934F98C007038EB /* BeVietnamPro-Medium.ttf in Resources */,
 				FF529A0E2934F98C007038EB /* Roboto-Light.ttf in Resources */,
 				FF5299DA2934F678007038EB /* CellCollHealthyCategory.xib in Resources */,
+				4F6092CB29372BD400C05798 /* GoogleService-Info.plist in Resources */,
 				FF529A182934F98C007038EB /* Roboto-Black.ttf in Resources */,
 				FF529A132934F98C007038EB /* Roboto-LightItalic.ttf in Resources */,
 				FF529AFC29364E57007038EB /* FavouriteVideoFitViewController.xib in Resources */,
@@ -1794,7 +1798,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CY4CXRJ4H3;
+				DEVELOPMENT_TEAM = UQF4738N37;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NiteFitness/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
