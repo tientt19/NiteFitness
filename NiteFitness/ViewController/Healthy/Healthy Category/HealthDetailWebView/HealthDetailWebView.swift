@@ -16,6 +16,7 @@ class HealthDetailWebView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.webView.scrollView.subviews.forEach { $0.isUserInteractionEnabled = false }
     }
     
     func loadWebView(url: URL, completion: @escaping () -> Void) {
