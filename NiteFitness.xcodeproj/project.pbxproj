@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F156498294B352C008C93E8 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F156497294B352C008C93E8 /* CareKit */; };
+		4F15649A294B352C008C93E8 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 4F156499294B352C008C93E8 /* CareKitFHIR */; };
+		4F1564A5294B3662008C93E8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1564A2294B3637008C93E8 /* ResearchKit.framework */; };
+		4F1564A6294B3662008C93E8 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1564A2294B3637008C93E8 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F1AC575294B32B900E86769 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1AC574294B32B800E86769 /* HealthKit.framework */; };
 		4F6092CB29372BD400C05798 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F6092CA29372BD400C05798 /* GoogleService-Info.plist */; };
 		4F6092E2293740DA00C05798 /* HealthDetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6092E0293740D900C05798 /* HealthDetailWebView.swift */; };
 		4F6092E3293740DA00C05798 /* HealthDetailWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6092E1293740D900C05798 /* HealthDetailWebView.xib */; };
@@ -234,9 +239,42 @@
 		FF529B4F293662DE007038EB /* CellCollectionViewVideoFit.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF529B4D293662DE007038EB /* CellCollectionViewVideoFit.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4F1564A1294B3637008C93E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F15649B294B3637008C93E8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		4F1564A3294B3637008C93E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F15649B294B3637008C93E8 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F1564A7294B3662008C93E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F1564A6294B3662008C93E8 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		399571A9E061B315376A5C67 /* Pods_NiteFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiteFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46040D2CDD889832914B3B5E /* Pods-NiteFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteFitness.release.xcconfig"; path = "Target Support Files/Pods-NiteFitness/Pods-NiteFitness.release.xcconfig"; sourceTree = "<group>"; };
+		4F15649B294B3637008C93E8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-main/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		4F1AC574294B32B800E86769 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4F6092CA29372BD400C05798 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F6092E0293740D900C05798 /* HealthDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailWebView.swift; sourceTree = "<group>"; };
 		4F6092E1293740D900C05798 /* HealthDetailWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthDetailWebView.xib; sourceTree = "<group>"; };
@@ -471,13 +509,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F156498294B352C008C93E8 /* CareKit in Frameworks */,
 				B942C2ECAEBCFED99EA8C82B /* Pods_NiteFitness.framework in Frameworks */,
+				4F1AC575294B32B900E86769 /* HealthKit.framework in Frameworks */,
+				4F15649A294B352C008C93E8 /* CareKitFHIR in Frameworks */,
+				4F1564A5294B3662008C93E8 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F15649C294B3637008C93E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1564A2294B3637008C93E8 /* ResearchKit.framework */,
+				4F1564A4294B3637008C93E8 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4F6092DF2937409C00C05798 /* HealthDetailWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +541,7 @@
 		54E143A4DF18FEF66E4DA97B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F1AC574294B32B800E86769 /* HealthKit.framework */,
 				399571A9E061B315376A5C67 /* Pods_NiteFitness.framework */,
 			);
 			name = Frameworks;
@@ -507,6 +559,7 @@
 		FF0B449F29101347008B3D0A = {
 			isa = PBXGroup;
 			children = (
+				4F15649B294B3637008C93E8 /* ResearchKit.xcodeproj */,
 				FF0B44AA29101347008B3D0A /* NiteFitness */,
 				FF0B44A929101347008B3D0A /* Products */,
 				BC2272D74CC137824EEE9663 /* Pods */,
@@ -1286,12 +1339,17 @@
 				FF0B44A529101347008B3D0A /* Frameworks */,
 				FF0B44A629101347008B3D0A /* Resources */,
 				D86D642AAA9935CC32B58091 /* [CP] Embed Pods Frameworks */,
+				4F1564A7294B3662008C93E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NiteFitness;
+			packageProductDependencies = (
+				4F156497294B352C008C93E8 /* CareKit */,
+				4F156499294B352C008C93E8 /* CareKitFHIR */,
+			);
 			productName = NiteFitness;
 			productReference = FF0B44A829101347008B3D0A /* NiteFitness.app */;
 			productType = "com.apple.product-type.application";
@@ -1320,14 +1378,40 @@
 				Base,
 			);
 			mainGroup = FF0B449F29101347008B3D0A;
+			packageReferences = (
+				4F156496294B352C008C93E8 /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = FF0B44A929101347008B3D0A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F15649C294B3637008C93E8 /* Products */;
+					ProjectRef = 4F15649B294B3637008C93E8 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF0B44A729101347008B3D0A /* NiteFitness */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F1564A2294B3637008C93E8 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 4F1564A1294B3637008C93E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F1564A4294B3637008C93E8 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 4F1564A3294B3637008C93E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF0B44A629101347008B3D0A /* Resources */ = {
@@ -1858,6 +1942,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F156496294B352C008C93E8 /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F156497294B352C008C93E8 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F156496294B352C008C93E8 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		4F156499294B352C008C93E8 /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F156496294B352C008C93E8 /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF0B44A029101347008B3D0A /* Project object */;
 }
