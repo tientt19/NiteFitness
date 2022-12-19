@@ -6,8 +6,18 @@
 //
 
 import UIKit
+import CareKit
+import CareKitStore
+import os.log
 
 class MainTabbarController: UITabBarController, UITabBarControllerDelegate {
+    
+    lazy var storeManager = OCKSynchronizedStoreManager(
+      wrapping: OCKStore(
+        name: "com.raywenderlich.MyVaccine.carekitstore",
+        type: .inMemory
+      )
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,10 +118,24 @@ class MainTabbarController: UITabBarController, UITabBarControllerDelegate {
 //            DoctorDetailViewController.self,
             CategoryVideoFitViewController.self])
         
+        // MARK: Page 3
+        let tab_3 = OverviewViewController(storeManager: storeManager)
+        tab_3.tabBarItem = TabbarItem.OVERVIEW.item
+        let navigationTab_3 = BaseNavigationController(rootViewController: tab_3)
+        navigationTab_3.setHiddenNavigationBarViewControllers([OverviewViewController.self])
+        
+        // MARK: Page 4
+        let tab_4 = TaskViewController(storeManager: storeManager)
+        tab_4.tabBarItem = TabbarItem.TASKVIEW.item
+        let navigationTab_4 = BaseNavigationController(rootViewController: tab_4)
+        navigationTab_4.setHiddenNavigationBarViewControllers([TaskViewController.self])
+        
         // MARK:  Add Tabbar
         self.viewControllers = [
             navigationTab_1,
-            navigationTab_2
+            navigationTab_2,
+            navigationTab_3,
+            navigationTab_4
         ]
         self.delegate = self
         gTabBarController = self

@@ -29,6 +29,8 @@ enum TabbarItem {
 //    case HOME
     case HEALTHY
     case EXERCISE
+    case OVERVIEW
+    case TASKVIEW
 //    case STORE
 //    case MESSAGE
 //    case PROFILE
@@ -67,7 +69,29 @@ enum TabbarItem {
             tabBarItem.selectedImage = self.tabbarImage(with: R.image.ic_fitness_selected())
 
             return tabBarItem
-//
+            
+        case .OVERVIEW:
+            let tabBarItem = UITabBarItem()
+            tabBarItem.tag = 3
+            tabBarItem.title  = "Tổng quan"
+            tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1)
+            tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            tabBarItem.image = self.tabbarImage(with: UIImage(systemName: "chart.bar.xaxis"))
+            tabBarItem.selectedImage = self.tabbarImage(with: UIImage(systemName: "chart.bar.xaxis"))
+            
+            return tabBarItem
+            
+        case .TASKVIEW:
+            let tabBarItem = UITabBarItem()
+            tabBarItem.tag = 4
+            tabBarItem.title  = "My Vaccine"
+            tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1)
+            tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            tabBarItem.image = self.tabbarImage(with: UIImage(systemName: "heart.text.square.fill"))
+            tabBarItem.selectedImage = self.tabbarImage(with: UIImage(systemName: "heart.text.square.fill"))
+            
+            return tabBarItem
+
 //        case .MESSAGE:
 //            let tabBarItem = UITabBarItem()
 //            tabBarItem.tag = 3

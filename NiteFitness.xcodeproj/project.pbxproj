@@ -16,6 +16,16 @@
 		4F6092E2293740DA00C05798 /* HealthDetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6092E0293740D900C05798 /* HealthDetailWebView.swift */; };
 		4F6092E3293740DA00C05798 /* HealthDetailWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6092E1293740D900C05798 /* HealthDetailWebView.xib */; };
 		B942C2ECAEBCFED99EA8C82B /* Pods_NiteFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399571A9E061B315376A5C67 /* Pods_NiteFitness.framework */; };
+		FF021AE42950C06100CDE6DA /* LoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AE32950C06100CDE6DA /* LoggerExtension.swift */; };
+		FF021AF72950C14D00CDE6DA /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AF32950C14D00CDE6DA /* SurveyViewModel.swift */; };
+		FF021AF82950C14D00CDE6DA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AF42950C14D00CDE6DA /* TaskManager.swift */; };
+		FF021AF92950C14D00CDE6DA /* SurveyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AF52950C14D00CDE6DA /* SurveyManager.swift */; };
+		FF021AFA2950C14D00CDE6DA /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AF62950C14D00CDE6DA /* TaskViewModel.swift */; };
+		FF021AFD2950C1BF00CDE6DA /* IdentifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AFB2950C1BF00CDE6DA /* IdentifierModel.swift */; };
+		FF021AFE2950C1BF00CDE6DA /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021AFC2950C1BF00CDE6DA /* TaskModel.swift */; };
+		FF021B042950C31300CDE6DA /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021B032950C31300CDE6DA /* TaskViewController.swift */; };
+		FF021B062950C32100CDE6DA /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF021B052950C32100CDE6DA /* OverviewViewController.swift */; };
+		FF021B082950C56000CDE6DA /* consent.html in Resources */ = {isa = PBXBuildFile; fileRef = FF021B072950C56000CDE6DA /* consent.html */; };
 		FF0B44AC29101347008B3D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B44AB29101347008B3D0A /* AppDelegate.swift */; };
 		FF0B44AE29101347008B3D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B44AD29101347008B3D0A /* SceneDelegate.swift */; };
 		FF0B44B029101347008B3D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0B44AF29101347008B3D0A /* ViewController.swift */; };
@@ -278,6 +288,16 @@
 		4F6092CA29372BD400C05798 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F6092E0293740D900C05798 /* HealthDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailWebView.swift; sourceTree = "<group>"; };
 		4F6092E1293740D900C05798 /* HealthDetailWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthDetailWebView.xib; sourceTree = "<group>"; };
+		FF021AE32950C06100CDE6DA /* LoggerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtension.swift; sourceTree = "<group>"; };
+		FF021AF32950C14D00CDE6DA /* SurveyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		FF021AF42950C14D00CDE6DA /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		FF021AF52950C14D00CDE6DA /* SurveyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyManager.swift; sourceTree = "<group>"; };
+		FF021AF62950C14D00CDE6DA /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		FF021AFB2950C1BF00CDE6DA /* IdentifierModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierModel.swift; sourceTree = "<group>"; };
+		FF021AFC2950C1BF00CDE6DA /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		FF021B032950C31300CDE6DA /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		FF021B052950C32100CDE6DA /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		FF021B072950C56000CDE6DA /* consent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = consent.html; sourceTree = "<group>"; };
 		FF0B44A829101347008B3D0A /* NiteFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0B44AB29101347008B3D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF0B44AD29101347008B3D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -556,6 +576,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF021AEF2950C12900CDE6DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF021AF52950C14D00CDE6DA /* SurveyManager.swift */,
+				FF021AF32950C14D00CDE6DA /* SurveyViewModel.swift */,
+				FF021AF42950C14D00CDE6DA /* TaskManager.swift */,
+				FF021AF62950C14D00CDE6DA /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF021AFF2950C2E300CDE6DA /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				FF021B052950C32100CDE6DA /* OverviewViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		FF021B002950C2F100CDE6DA /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				FF021B032950C31300CDE6DA /* TaskViewController.swift */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
 		FF0B449F29101347008B3D0A = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +625,7 @@
 		FF0B44AA29101347008B3D0A /* NiteFitness */ = {
 			isa = PBXGroup;
 			children = (
+				FF021AEF2950C12900CDE6DA /* ViewModel */,
 				FF0B44EA291014F5008B3D0A /* App Kits */,
 				FF0B44C6291014F5008B3D0A /* Base */,
 				FF0B44CE291014F5008B3D0A /* Config */,
@@ -602,6 +650,8 @@
 		FF0B44BF2910139B008B3D0A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FF021B002950C2F100CDE6DA /* TaskView */,
+				FF021AFF2950C2E300CDE6DA /* Overview */,
 				FF5299AB2934F678007038EB /* Healthy */,
 				FF0B44C0291013A3008B3D0A /* SplashScreen */,
 				FF529A9E29364E57007038EB /* CategoryVideoFit */,
@@ -674,6 +724,7 @@
 				FF0B44E7291014F5008B3D0A /* Encodable.swift */,
 				FF0B44E8291014F5008B3D0A /* String.swift */,
 				FF0B44E9291014F5008B3D0A /* TimeInterval.swift */,
+				FF021AE32950C06100CDE6DA /* LoggerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -887,6 +938,8 @@
 				FF529B0E29364EA4007038EB /* VideoModel.swift */,
 				FF529B1229364F0A007038EB /* CategoryFitModel.swift */,
 				FF529B1D29365A2F007038EB /* HomeFitnessModel.swift */,
+				FF021AFB2950C1BF00CDE6DA /* IdentifierModel.swift */,
+				FF021AFC2950C1BF00CDE6DA /* TaskModel.swift */,
 				FF529B1F29365A59007038EB /* PageHomeModel.swift */,
 				FF529B2529365B17007038EB /* AuthModel.swift */,
 				FF529B2729365B43007038EB /* UserModel.swift */,
@@ -938,6 +991,7 @@
 		FF0B4526291014F5008B3D0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FF021B072950C56000CDE6DA /* consent.html */,
 				FF0B4527291014F5008B3D0A /* Units.swift */,
 				FF0B4528291014F5008B3D0A /* Utils.swift */,
 				FF0B4529291014F5008B3D0A /* ErrorView.swift */,
@@ -1459,6 +1513,7 @@
 				FF529A252934F98C007038EB /* BeVietnamPro-BoldItalic.ttf in Resources */,
 				FF529A212934F98C007038EB /* BeVietnamPro-Thin.ttf in Resources */,
 				FF529AE129364E57007038EB /* HistoryVideosFitViewController.xib in Resources */,
+				FF021B082950C56000CDE6DA /* consent.html in Resources */,
 				FF529B0C29364E57007038EB /* CellTableViewCategory.xib in Resources */,
 				FF529A122934F98C007038EB /* Roboto-BoldItalic.ttf in Resources */,
 				FF5299D52934F678007038EB /* HeaderCollectionHealthyCategory.xib in Resources */,
@@ -1558,6 +1613,7 @@
 				FF0B4549291014F5008B3D0A /* TimeInterval.swift in Sources */,
 				FF0B458629101A0A008B3D0A /* LoginInteractorInput.swift in Sources */,
 				FF0B4570291014F5008B3D0A /* Units.swift in Sources */,
+				FF021AFE2950C1BF00CDE6DA /* TaskModel.swift in Sources */,
 				FF0B459029101A1F008B3D0A /* NewFeedRouter.swift in Sources */,
 				FF0B4546291014F5008B3D0A /* Number.swift in Sources */,
 				FF0B4554291014F5008B3D0A /* PanModalPresenter.swift in Sources */,
@@ -1642,7 +1698,9 @@
 				FF529B2F29365CEA007038EB /* SKUserDefaults.swift in Sources */,
 				FF0B4573291014F5008B3D0A /* ProgressPosition.swift in Sources */,
 				FF529B3129365D8C007038EB /* UILabel.swift in Sources */,
+				FF021AF82950C14D00CDE6DA /* TaskManager.swift in Sources */,
 				FF529B4629366079007038EB /* AVKits.swift in Sources */,
+				FF021AE42950C06100CDE6DA /* LoggerExtension.swift in Sources */,
 				FF529B4829366170007038EB /* UIViewController.swift in Sources */,
 				FF529B1A2936593E007038EB /* AppShare.swift in Sources */,
 				FF0B4558291014F5008B3D0A /* PanModalPresentationController.swift in Sources */,
@@ -1651,6 +1709,7 @@
 				FF0B454F291014F5008B3D0A /* PanModalPresentable.swift in Sources */,
 				FF529B2A29365B69007038EB /* GenderModel.swift in Sources */,
 				FF529AFA29364E57007038EB /* FavouriteVideoFitViewController.swift in Sources */,
+				FF021AFD2950C1BF00CDE6DA /* IdentifierModel.swift in Sources */,
 				FF529AF129364E57007038EB /* VideoFitDetailPlayerViewModel.swift in Sources */,
 				FF0B458529101A0A008B3D0A /* LoginRouter.swift in Sources */,
 				FF5299E22934F678007038EB /* HealthyDetailInteractorInput.swift in Sources */,
@@ -1665,6 +1724,7 @@
 				FF0B44AC29101347008B3D0A /* AppDelegate.swift in Sources */,
 				FF529AE229364E57007038EB /* HistoryVideosFitInteractorInput.swift in Sources */,
 				FF0B459129101A1F008B3D0A /* NewFeedInteractorInput.swift in Sources */,
+				FF021B062950C32100CDE6DA /* OverviewViewController.swift in Sources */,
 				FF529AF929364E57007038EB /* FavouriteVideoFitViewModel.swift in Sources */,
 				FF529B422936602A007038EB /* AppLink.swift in Sources */,
 				FF0B452E291014F5008B3D0A /* InterfaceRepresentable.swift in Sources */,
@@ -1674,12 +1734,15 @@
 				FF0B4560291014F5008B3D0A /* TagListView.swift in Sources */,
 				FF0B4547291014F5008B3D0A /* Encodable.swift in Sources */,
 				FF529B4E293662DE007038EB /* CellCollectionViewVideoFit.swift in Sources */,
+				FF021AF72950C14D00CDE6DA /* SurveyViewModel.swift in Sources */,
 				FF0B453E291014F5008B3D0A /* UIDevice.swift in Sources */,
 				FF529B3529365E6A007038EB /* CoachModel.swift in Sources */,
 				FF529B1C2936597B007038EB /* DynamicLinksManager.swift in Sources */,
 				FF0B458829101A0A008B3D0A /* LoginViewModel.swift in Sources */,
 				FF0B4550291014F5008B3D0A /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				FF0B4571291014F5008B3D0A /* Utils.swift in Sources */,
+				FF021AFA2950C14D00CDE6DA /* TaskViewModel.swift in Sources */,
+				FF021AF92950C14D00CDE6DA /* SurveyManager.swift in Sources */,
 				FF529B4029365FD4007038EB /* WorkoutItemProtocol.swift in Sources */,
 				FF0B4562291014F5008B3D0A /* LocalNotification.swift in Sources */,
 				FF5299D62934F678007038EB /* HealthyCategoryInteractorInput.swift in Sources */,
@@ -1711,6 +1774,7 @@
 				FF0B453D291014F5008B3D0A /* UITableView.swift in Sources */,
 				FF0B4535291014F5008B3D0A /* SignInConfig.swift in Sources */,
 				FF0B453C291014F5008B3D0A /* UICollectionView.swift in Sources */,
+				FF021B042950C31300CDE6DA /* TaskViewController.swift in Sources */,
 				FF0B4543291014F5008B3D0A /* EmptyDataSetSource.swift in Sources */,
 				FF0B4568291014F5008B3D0A /* APIError.swift in Sources */,
 			);
@@ -1876,7 +1940,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1906,7 +1970,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

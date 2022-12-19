@@ -7,9 +7,18 @@
 
 import UIKit
 import Firebase
+import CareKit
+import CareKitStore
+import os.log
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    lazy var storeManager = OCKSynchronizedStoreManager(
+      wrapping: OCKStore(
+        name: "com.raywenderlich.MyVaccine.carekitstore",
+        type: .inMemory
+      )
+    )
     
     var window: UIWindow?
     var orientationLock = UIInterfaceOrientationMask.portrait
@@ -18,7 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setInitRootViewController()
         self.onDisableDarkmode()
         self.initFirebaseConfigure()
+        self.setInitTaskView()
         return true
+    }
+    
+    //MARK: - SetInitTaskView
+    private func setInitTaskView() {
+        // Add Vaccination Task to the StoreManager
+        let taskList = [TaskManager.makeOnboarding()]
+        TaskViewModel.prepareTasks(storeManager: storeManager, tasksList: taskList)
     }
     
     //MARK: - DISABLE DARKMODE
